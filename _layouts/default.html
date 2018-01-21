@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}} · {% endif %}Magnificent Bouquets</title>
+  <meta name="description" content="{{page.meta}}">
+  <meta name="author" content="Jo Hammonds">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#bb91bc">
+  <link href="{{site.baseurl}}/css/modules.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+</head>
+<body>
+  <ul class="nav skip-links">
+    <li><a itemprop="url" href="{{site.baseurl}}/#main">Jump to Main Content</a></li>
+    <li><a itemprop="url" href="{{site.baseurl}}/#nav">Jump to Navigation</a></li>
+    <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-1}}">{{page.skip-link-title-1}}</a></li>
+    <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-2}}">{{page.skip-link-title-2}}</a></li>
+  </ul>
+</body>
+</html>
