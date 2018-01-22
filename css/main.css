@@ -8,6 +8,7 @@ a {
 
 .top-nav a {
   color: #555154;
+  transition: all .25s linear;
 }
 
 .top-nav a:hover {
@@ -146,8 +147,69 @@ footer {
   border-top: solid 10px #bb91bc;
 }
 
+.link {
+  color: #bb91bc;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #f4f4f4;
+  font-weight: bold;
+}
+
 .place {
   color: #bb91bc;
+}
+
+.heading {
+  color: white;
+  background-color: #bb91bc;
+  text-transform: uppercase;
+}
+
+.heading::before,
+.heading::after {
+    display: inline-block;
+    content: "";
+    border-top: 2px solid white;
+    width: 15%;
+    margin: 0 .3rem;
+    transform: translateY(-.5rem);
+}
+
+.welcome-section,
+.test-section {
+  color: white;
+  background-color: #555154;
+}
+
+.service-section {
+  background-color: #E0DFE4;
+}
+
+.card h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.card {
+  background-color: #555154;
+  border: 2px solid white;
+  transition: all .25s linear;
+}
+
+.card a {
+  color: white;
+}
+
+.card:hover {
+  background-color: #bb91bc;
+}
+
+.pull-quote {
+  background-color: rgba(0, 0, 0, .75);
+  overflow: visible;
+  margin-bottom: -2.5rem;
+  min-width: 20rem;
 }
 
 @media only screen and (min-width: 60em) {
