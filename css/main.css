@@ -1,0 +1,185 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-nav a {
+  color: #555154;
+}
+
+.top-nav a:hover {
+  color: #bb91bc;
+}
+
+.contact-top {
+  background-color: #555154;
+}
+
+.contact-top a {
+  color: white;
+}
+
+.contact-top a:hover {
+  color: #bb91bc;
+  fill: #bb91bc;
+}
+
+.header {
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  overflow: hidden;
+}
+
+.header li,
+.header .menu-btn {
+  background-color: #f4f4f4;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.header ul {
+  padding-left: 0;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #555154;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #555154;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 250px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.header ul {
+  list-style-type: none;
+}
+
+.menu-1 {
+  order: 2;
+}
+
+.menu-2 {
+  order: 3;
+}
+
+.logo {
+  order: 1;
+}
+
+nav {
+  border-bottom: solid 10px #bb91bc;
+}
+
+footer {
+  color: white;
+  background-color: #555154;
+  border-top: solid 10px #bb91bc;
+}
+
+.place {
+  color: #bb91bc;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .header li,
+  .header .menu-btn {
+    background-color: white;
+  }
+
+  .header .menu {
+    clear: none;
+    text-align: center;
+    max-height: none;
+  }
+
+  .header li {
+    display: inline-block;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+  .menu-1 {
+    order: 1;
+  }
+
+  .menu-2 {
+    order: 3;
+  }
+
+  .logo {
+    order: 2;
+  }
+}

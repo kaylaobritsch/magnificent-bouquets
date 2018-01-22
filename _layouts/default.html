@@ -8,17 +8,66 @@
   <meta name="author" content="Jo Hammonds">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#bb91bc">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600" rel="stylesheet">
   <link href="{{site.baseurl}}/css/modules.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
 </head>
 <body>
+
   <ul class="nav skip-links">
     <li><a itemprop="url" href="{{site.baseurl}}/#main">Jump to Main Content</a></li>
     <li><a itemprop="url" href="{{site.baseurl}}/#nav">Jump to Navigation</a></li>
     <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-1}}">{{page.skip-link-title-1}}</a></li>
     <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-2}}">{{page.skip-link-title-2}}</a></li>
   </ul>
+
+  <nav class="push-0" id="nav" role="navigation">
+    <div class="contact-top gutter pad-b-1-4 push-0">
+      <ul class="wrapper pad-t-1-2 push-0 list-group-inline text-right">
+        <li><a class="micro push-r" href="tel:+44 7940 582490"><i class="icon i-18 gutter-1-2"><svg><use xlink:href="{{site.baseurl}}/images/icons.svg#phone"></use></svg></i>7940 582490</a></i>
+        <li><a class="micro" href="mailto:magnificentbouquets@gmail.com" subject="Hey There"><i class="icon i-18 gutter-1-2"><svg><use xlink:href="{{site.baseurl}}/images/icons.svg#email"></use></svg></i>magnificentbouquets@gmail.com</a></li>
+      </ul>
+    </div>
+
+    <header class="header wrapper">
+      <div class="top-nav grid grid-middle gutter push-0 pad-t">
+        <div class="unit xs-1-2 l-1-5 logo push-1-2">
+          <a itemprop="url" href="{{site.baseurl}}/">
+            <img class="img-flex" src="{{site.baseurl}}/images/magnificent-bouquets-logo.png">
+          </a>
+        </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="nav-list menu menu-1 push-0 unit xs-1 l-2-5 gutter-0">
+          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="{{site.baseurl}}/services" {% if page.url == '/services' %} class="current" {% endif %}>Services</a></li>
+          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="{{site.baseurl}}/about" {% if page.url == '/about' %} class="current" {% endif %}>About</a></li>
+          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="{{site.baseurl}}/gallery" {% if page.url == '/gallery' %} class="current" {% endif %}>Gallery</a></li>
+        </ul>
+        <ul class="nav-list menu menu-2 push-0 unit xs-1 l-2-5">
+          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="#">Blog</a></li>
+          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="{{site.baseurl}}/contact" {% if page.url == '/contact' %} class="current" {% endif %}>Contact</a></li>
+          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="{{site.baseurl}}/#testimonials" {% if page.url == '/#testimonials' %} class="current" {% endif %}>Testimonials</a></li>
+        </ul>
+      </div>
+    </header>
+  </nav>
+
+  {{content}}
+
+  <footer>
+    <div class="wrapper gutter pad-t pad-b-2">
+      <p class="milli">Magnificent Bouquets look forward to talking about flowers with you soon.</p>
+      <p class="micro push-0">Prorietor & Creative Director</p>
+      <p class="micro push-0 bold">Jo Hammonds</p>
+      <p class="micro push-0"> 07940 582 490</p>
+      <p class="micro">Magnificentbouquets@gmail.com</p>
+      <p class="micro push-0 italic place">Magnificent Bouquets, Oadby, Leicestershire, England</p>
+      <small class="micro push-0">© Magnificent Bouquets 2016. All rights reserved.</small>
+    </div>
+  </footer>
+
 </body>
 </html>
