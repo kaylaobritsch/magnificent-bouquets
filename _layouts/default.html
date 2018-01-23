@@ -17,7 +17,7 @@
 </head>
 <body>
 
-  <ul class="nav skip-links">
+  <ul class="nav skip-links grid">
     <li><a itemprop="url" href="{{site.baseurl}}/#main">Jump to Main Content</a></li>
     <li><a itemprop="url" href="{{site.baseurl}}/#nav">Jump to Navigation</a></li>
     <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-1}}">{{page.skip-link-title-1}}</a></li>
@@ -32,8 +32,8 @@
       </ul>
     </div>
 
-    <header class="header wrapper">
-      <div class="top-nav grid grid-middle gutter push-0 pad-t">
+    <header class="header">
+      <div class="wrapper top-nav grid grid-middle gutter push-0 pad-t pad-b">
         <div class="unit xs-1-2 l-1-5 logo push-1-2">
           <a itemprop="url" href="{{site.baseurl}}/">
             <img class="img-flex" src="{{site.baseurl}}/images/magnificent-bouquets-logo.png">
@@ -42,14 +42,14 @@
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="nav-list menu menu-1 push-0 unit xs-1 l-2-5 gutter-0">
-          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="{{site.baseurl}}/services" {% if page.url == '/services' %} class="current" {% endif %}>Services</a></li>
-          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="{{site.baseurl}}/about" {% if page.url == '/about' %} class="current" {% endif %}>About</a></li>
-          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="{{site.baseurl}}/gallery" {% if page.url == '/gallery' %} class="current" {% endif %}>Gallery</a></li>
+          <li><a itemprop="url" class="block milli gutter-1-2 island-1-2" href="{{site.baseurl}}/services" {% if page.url == '/services' %} class="current" {% endif %}>Services</a></li>
+          <li><a itemprop="url" class="block milli island-1-2" href="{{site.baseurl}}/about" {% if page.url == '/about' %} class="current" {% endif %}>About</a></li>
+          <li><a itemprop="url" class="block milli island-1-2" href="{{site.baseurl}}/gallery" {% if page.url == '/gallery' %} class="current" {% endif %}>Gallery</a></li>
         </ul>
         <ul class="nav-list menu menu-2 push-0 unit xs-1 l-2-5">
-          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="#">Blog</a></li>
-          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="{{site.baseurl}}/contact" {% if page.url == '/contact' %} class="current" {% endif %}>Contact</a></li>
-          <li class="island-1-4"><a itemprop="url" class="milli pad-t-0 island-1-2" href="{{site.baseurl}}/#testimonials" {% if page.url == '/#testimonials' %} class="current" {% endif %}>Testimonials</a></li>
+          <li><a itemprop="url" class="block milli island-1-2" href="#">Blog</a></li>
+          <li><a itemprop="url" class="block milli island-1-2" href="{{site.baseurl}}/contact" {% if page.url == '/contact' %} class="current" {% endif %}>Contact</a></li>
+          <li><a itemprop="url" class="block milli island-1-2" href="{{site.baseurl}}/#testimonials" {% if page.url == '/#testimonials' %} class="current" {% endif %}>Testimonials</a></li>
         </ul>
       </div>
     </header>
@@ -68,6 +68,41 @@
       <small class="micro push-0">© Magnificent Bouquets 2016. All rights reserved.</small>
     </div>
   </footer>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("badge");
+      if (n==undefined){n = ++slideIndex}
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+         x[slideIndex-1].className += " animate-fading";
+      }
+      for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" badge-focus", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " badge-focus";
+
+      setTimeout(showDivs, 10000);
+    }
+  </script>
 
 </body>
 </html>
