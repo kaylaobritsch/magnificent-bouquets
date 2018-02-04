@@ -18,8 +18,8 @@ a {
 
 .top-nav a:hover,
 .top-nav a:focus,
-.current a {
-  color: #bb91bc;
+.current {
+  color: #bb91bc !important;
 }
 
 .contact-top {
