@@ -1,0 +1,51 @@
+---
+layout: default
+meta: With an unrivalled reputation for quality and style, Magnificent Bouquets designs creative, luxury flowers in Oadby, Leicester, East Midlands. Magnificent Bouquets also designs straight from the heart, sympathy with empathy flowers.
+---
+
+{% include banner.html image="banner-1.jpg" alt="contact banner" title="Contact Us" txt="Magnificent Bouquets look forward to talking
+about flowers with you soon<br>" btn-hidden="hidden"%}
+
+<section class="contact-section">
+  <h3 class="text-center mega heading pad-t-1-4 pad-b-1-4 push-0">Message Us</h3>
+  <form method="POST" novalidate action="">
+    <fieldset class="wrapper gutter pad-t pad-b-2 push-0">
+      <legend class="contact-legend">Contact Us</legend>
+      <div class="error-message error-message-highlighted push" role="alert" aria-live="assertive">
+        <h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below</h3>
+      </div>
+
+      <div class="push-1-2">
+        <label for="name">Name</label>
+        <div>
+          <input id="name" class="w-1" required aria-describedby="name-error" placeholder="First Last">
+          <p class="error-message milli pad-t-1-4 push-1-2" id="name-error"><i class="icon i-24 gutter"><svg class="warning"><use xlink:href="{{site.baseurl}}/images/icons.svg#warning"></use></svg></i>Please provide a full name</p>
+        </div>
+      </div>
+
+      <div class="push-1-2">
+        <label for="email">Email</label>
+        <div>
+          <input id="email" class="w-1" required aria-describedby="email-error" placeholder="hello@youremail.com">
+          <p class="error-message milli pad-t-1-4 push-1-2" id="email-error"><i class="icon i-24 gutter"><svg class="warning"><use xlink:href="{{site.baseurl}}/images/icons.svg#warning"></use></svg></i>Please provide a proper e-mail</p>
+        </div>
+      </div>
+
+      <div class="push-1-2">
+        <label for="question">Message</label>
+        <div>
+          <textarea name="question" id="question" class="w-1" required aria-describedby="question-error" placeholder="Just wanted to say…"></textarea>
+          <p class="error-message milli pad-t-1-4 push-1-2" id="question-error"><i class="icon i-24 gutter"><svg class="warning"><use xlink:href="{{site.baseurl}}/images/icons.svg#warning"></use></svg></i>Please tell us your comment</p>
+        </div>
+      </div>
+
+      <div>
+        <input type="hidden" name="_subject" value="Saying Hello!">
+      </div>
+
+      <div class="pad-t-1-2">
+        <button class="btn btn-ghost" type="submit">Send Now</button>
+      </div>
+    </fieldset>
+  </form>
+</section>

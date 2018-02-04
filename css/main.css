@@ -7,13 +7,18 @@ a {
   text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .top-nav a {
   color: #555154;
   transition: all .25s linear;
 }
 
 .top-nav a:hover,
-.top-nav a:focus {
+.top-nav a:focus,
+.current a {
   color: #bb91bc;
 }
 
@@ -166,14 +171,19 @@ h2 {
   display: block;
 }
 
-.banner-text .btn {
+.banner-text .btn,
+button,
+.btn {
+  background-color: none;
   border: 2px solid white;
   border-radius: 0;
   color: white;
 }
 
 .banner-text .btn:hover,
-.banner-text .btn:focus {
+.banner-text .btn:focus,
+button:hover,
+.btn:hover {
   border-color: #bb91bc;
   color: #bb91bc;
 }
@@ -305,6 +315,71 @@ footer {
 .social-section svg:hover,
 .social-section svg:focus {
   fill: #bb91bc;
+}
+
+footer a {
+  color: #fff;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
+.about-section {
+  background-color: #e0dfe4;
+  color: #555154;
+}
+
+.about-section a {
+  color: #bb91bc;
+}
+
+.contact-section {
+  color: #fff;
+  background-color: #555154;
+}
+
+.contact-legend {
+  display: none;
+}
+
+fieldset {
+  border-top: none;
+}
+
+.contact-section svg {
+  fill: #fff;
+}
+
+.is-validated input:invalid,
+.is-validated textarea:invalid,
+.is-validated input[type="checkbox"]:invalid + label::before {
+  border-color: #bb91bc;
+}
+
+.is-validated input:invalid ~ .form-background,
+.is-validated textarea:invalid ~ .form-background-question {
+  background-color: #bb91bc;
+}
+
+.error-message {
+  display: none;
+  color:  #fff;
+}
+
+.error-message-highlighted {
+  color: #bb91bc;
+}
+
+.error-message-highlighted:focus {
+  outline: none;
+}
+
+.is-validated > .error-message:first-child,
+.is-validated input:invalid + .error-message,
+.is-validated textarea:invalid + .error-message,
+.is-validated input:invalid + label + .error-message {
+  display: block;
 }
 
 @media only screen and (min-width: 60em) {
