@@ -13,11 +13,11 @@ title: Gallery
 
     {% include gallery-section.html heading="Weddings" image-1="placeholder-1by1.svg" alt-1="" image-2="placeholder-1by1.svg" alt-2="" image-3="placeholder-3by2.svg" alt-3="" txt="Your wedding flowers should be a truly personal statement about you and how you feel on this most special of days. Initially, give us an idea of the style of your dress, your themes and your venue. Then together, we’ll design wedding flowers exclusively for you, tailored to fit your personality, location and dreams." btn-txt="View All" mod-btn="wedding-btn" %}
 
-    {% include gallery-section.html heading="Stately houses, Castles & Cathedrals" image-1="placeholder-1by1.svg" alt-1="" image-2="placeholder-1by1.svg" alt-2="" image-3="placeholder-3by2.svg" alt-3="" txt="Flowers at an event should have a sense of balance and rhythm. A natural flow and harmony connecting all the arrangements, making you want to look and keep on looking. And every bride should savour that spectacular moment, with a grand entrance carrying her Magnificent Bouquet. It’s about creating a series of WOW moments to surprise and delight guests as they move through your venue – whether it’s a castle, church, hotel, marquee, stately house or favourite restaurant." btn-link="" btn-txt="View All" %}
+    {% include gallery-section.html heading="Stately houses, Castles & Cathedrals" image-1="placeholder-1by1.svg" alt-1="" image-2="placeholder-1by1.svg" alt-2="" image-3="placeholder-3by2.svg" alt-3="" txt="Flowers at an event should have a sense of balance and rhythm. A natural flow and harmony connecting all the arrangements, making you want to look and keep on looking. And every bride should savour that spectacular moment, with a grand entrance carrying her Magnificent Bouquet. It’s about creating a series of WOW moments to surprise and delight guests as they move through your venue – whether it’s a castle, church, hotel, marquee, stately house or favourite restaurant." btn-link="" btn-txt="View All" mod-btn="stately-btn" %}
 
-    {% include gallery-section.html heading="Funeral Flowers" image-1="placeholder-1by1.svg" alt-1="" image-2="placeholder-1by1.svg" alt-2="" image-3="placeholder-3by2.svg" alt-3="" txt="At Magnificent Bouquets we believe in sympathy with empathy. Funerals are your last chance to say goodbye. Having lost three dear ones within six months of each other, we can truly appreciate how awful it is to experience that loss. And every sympathy tribute that is created has those feelings deeply embedded in, allowing us to produce arrangements that really say what you feel in a beautiful way." btn-link="" btn-txt="View All" %}
+    {% include gallery-section.html heading="Funeral Flowers" image-1="placeholder-1by1.svg" alt-1="" image-2="placeholder-1by1.svg" alt-2="" image-3="placeholder-3by2.svg" alt-3="" txt="At Magnificent Bouquets we believe in sympathy with empathy. Funerals are your last chance to say goodbye. Having lost three dear ones within six months of each other, we can truly appreciate how awful it is to experience that loss. And every sympathy tribute that is created has those feelings deeply embedded in, allowing us to produce arrangements that really say what you feel in a beautiful way." btn-link="" btn-txt="View All" mod-btn="funeral-btn" %}
 
-    {% include gallery-section.html heading="Contract Flowers & Special Events" image-1="placeholder-1by1.svg" alt-1="" image-2="placeholder-1by1.svg" alt-2="" image-3="placeholder-3by2.svg" alt-3="" txt="For businesses, restaurants, hotels and homes we provide a regular contract service of fresh floral designs and arrangements, styled to add interest and a focal point for your customers." btn-link="" btn-txt="View All" %}
+    {% include gallery-section.html heading="Contract Flowers & Special Events" image-1="placeholder-1by1.svg" alt-1="" image-2="placeholder-1by1.svg" alt-2="" image-3="placeholder-3by2.svg" alt-3="" txt="For businesses, restaurants, hotels and homes we provide a regular contract service of fresh floral designs and arrangements, styled to add interest and a focal point for your customers." btn-link="" btn-txt="View All" mod-btn="contract-btn" %}
   </div>
 
   <div id="modal-basket" class="modal pad-t">
@@ -86,6 +86,111 @@ title: Gallery
 
         <a class="prev absolute pin-center-left island peta" onclick="plusDivs(-1, 1)">&#10094;</a>
         <a class="next absolute pin-center-right island peta" onclick="plusDivs(1, 1)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-stately" class="modal pad-t">
+    <div class="wrapper gutter">
+      <h4 class="peta push-1-2">Stately houses, Castles & Cathedrals</h4>
+      <div class="modal-content relative">
+        <span class="close absolute pin-top-right nina" onclick="closeModal()">x</span>
+        <div class="gallerySlide3">
+          <div class="tera absolute pin-top-left island-1-2">1 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Stately houses, Castles & Cathedrals 1</p>
+        </div>
+
+        <div class="gallerySlide3">
+          <div class="tera absolute pin-top-left island-1-2">2 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Stately houses, Castles & Cathedrals 2</p>
+        </div>
+
+        <div class="gallerySlide3">
+          <div class="tera absolute pin-top-left island-1-2">3 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Stately houses, Castles & Cathedrals 3</p>
+        </div>
+
+        <div class="gallerySlide3">
+          <div class="tera absolute pin-top-left island-1-2">4 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Stately houses, Castles & Cathedrals 4</p>
+        </div>
+
+        <a class="prev absolute pin-center-left island peta" onclick="plusDivs(-1, 2)">&#10094;</a>
+        <a class="next absolute pin-center-right island peta" onclick="plusDivs(1, 2)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-funeral" class="modal pad-t">
+    <div class="wrapper gutter">
+      <h4 class="peta push-1-2">Funeral Flowers</h4>
+      <div class="modal-content relative">
+        <span class="close absolute pin-top-right nina" onclick="closeModal()">x</span>
+        <div class="gallerySlide4">
+          <div class="tera absolute pin-top-left island-1-2">1 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Funeral Flowers 1</p>
+        </div>
+
+        <div class="gallerySlide4">
+          <div class="tera absolute pin-top-left island-1-2">2 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Funeral Flowers 2</p>
+        </div>
+
+        <div class="gallerySlide4">
+          <div class="tera absolute pin-top-left island-1-2">3 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Funeral Flowers 3</p>
+        </div>
+
+        <div class="gallerySlide4">
+          <div class="tera absolute pin-top-left island-1-2">4 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Funeral Flowers 4</p>
+        </div>
+
+        <a class="prev absolute pin-center-left island peta" onclick="plusDivs(-1, 3)">&#10094;</a>
+        <a class="next absolute pin-center-right island peta" onclick="plusDivs(1, 3)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-contract" class="modal pad-t">
+    <div class="wrapper gutter">
+      <h4 class="peta push-1-2">Funeral Flowers</h4>
+      <div class="modal-content relative">
+        <span class="close absolute pin-top-right nina" onclick="closeModal()">x</span>
+        <div class="gallerySlide5">
+          <div class="tera absolute pin-top-left island-1-2">1 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Funeral Flowers 1</p>
+        </div>
+
+        <div class="gallerySlide5">
+          <div class="tera absolute pin-top-left island-1-2">2 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Funeral Flowers 2</p>
+        </div>
+
+        <div class="gallerySlide5">
+          <div class="tera absolute pin-top-left island-1-2">3 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Funeral Flowers 3</p>
+        </div>
+
+        <div class="gallerySlide5">
+          <div class="tera absolute pin-top-left island-1-2">4 / 4</div>
+          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <p class="pad-t-1-2">Funeral Flowers 4</p>
+        </div>
+
+        <a class="prev absolute pin-center-left island peta" onclick="plusDivs(-1, 4)">&#10094;</a>
+        <a class="next absolute pin-center-right island peta" onclick="plusDivs(1, 4)">&#10095;</a>
       </div>
     </div>
   </div>
