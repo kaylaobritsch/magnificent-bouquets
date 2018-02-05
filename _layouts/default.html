@@ -31,7 +31,7 @@
 
   <nav class="push-0" id="nav" role="navigation">
     <div class="contact-top gutter pad-b-1-4 push-0">
-      <ul class="wrapper pad-t-1-2 push-0 list-group-inline text-right">
+      <ul class="wrapper pad-t-1-4 push-0 list-group-inline text-right">
         <li><a class="micro push-r" href="tel:+44 7940 582490"><i class="icon i-18 gutter-1-2"><svg><use xlink:href="{{site.baseurl}}/images/icons.svg#phone"></use></svg></i>7940 582490</a></li>
         <li><a class="micro" href="mailto:magnificentbouquets@gmail.com" subject="Let's Talk Flowers!"><i class="icon i-18 gutter-1-2"><svg><use xlink:href="{{site.baseurl}}/images/icons.svg#email"></use></svg></i>magnificentbouquets@gmail.com</a></li>
       </ul>
@@ -112,5 +112,45 @@
     }
   </script>
 
+  <script>
+    var modalBasket = document.getElementById('modal-basket');
+    var btnBasket = document.getElementById("basket-btn");
+    var modalWedding = document.getElementById('modal-wedding');
+    var btnWedding = document.getElementById("wedding-btn");
+
+    btnBasket.onclick = function() {
+      modalBasket.style.display = "block";
+    }
+
+    btnWedding.onclick = function() {
+      modalWedding.style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('modal-basket').style.display = "none";
+      document.getElementById('modal-wedding').style.display = "none";
+    }
+
+    var slideIndex = [1,1];
+    var slideId = ["gallerySlide", "gallerySlide2"]
+    showDivs(1, 0);
+    showDivs(1, 1);
+
+    function plusDivs(n, no) {
+      showDivs(slideIndex[no] += n, no);
+    }
+
+    function showDivs(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex[no]-1].style.display = "block";
+    }
+
+  </script>
 </body>
 </html>
