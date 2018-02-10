@@ -1,0 +1,103 @@
+---
+layout: default
+meta:
+---
+
+{% include banner.html image="placeholder-16by9.svg" alt="about banner" title="Services" txt="It all starts with a free consultation" btn-link="contact/" btn-txt="Contact Us" %}
+
+<section class="services-section">
+  <h3 class="text-center mega heading pad-t-1-4 pad-b-1-4 push-0">Services</h3>
+  <div class="tab">
+    <div class="wrapper gutter">
+      <button class="tablinks pad-b-1-2 pad-t-1-2" onclick="openService(event, 'seasonal')" id="defaultOpen">Seasonal</button>
+      <button class="tablinks pad-b-1-2 pad-t-1-2" onclick="openService(event, 'wedding')">Wedding</button>
+      <button class="tablinks pad-b-1-2 pad-t-1-2" onclick="openService(event, 'castles')">Castles</button>
+      <button class="tablinks pad-b-1-2 pad-t-1-2" onclick="openService(event, 'funeral')">Funeral</button>
+      <button class="tablinks pad-b-1-2 pad-t-1-2" onclick="openService(event, 'contract')">Contract</button>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div id="seasonal" class="tabcontent">
+      <div class="grid pad-t">
+        <div class="gutter pad-b unit xs-1 s-1 m-1-2 l-1-2">
+          <img class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
+        </div>
+        <div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
+          <h4>Seasonal Bouquets & Fruit Baskets</h4>
+          <p>Over a cup of tea and a slice of cake, we can look at my work albums, flick through design books and have a good chat about colours, styles and all things floral.</p>
+          <p>We also create eye catching fruit baskets packed full of vitamins and goodness. So if you prefer to send fresh fruit to your dear one, please give us a <a href="{{site.baseurl}}/contact/">call today.</a></p>
+          <p>Prices start from £35.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="wedding" class="tabcontent">
+      <div class="grid pad-t">
+        <div class="gutter pad-b unit xs-1 s-1 m-1-2 l-1-2">
+          <img class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
+        </div>
+        <div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
+          <h4>Weddings</h4>
+          <p>We can create as much or little as you want – from a show-stopping bridal bouquet to a full range of stylish wedding flowers for everyone and everywhere.</p>
+          <ul>
+            <li>Bride’s bouquet: A unique bouquet to complement the style,  shape and fabric of your wedding dress and that really suits you</li>
+            <li>Bridesmaid & flower girl bouquets</li>
+            <li>Buttonholes for groom, best man & ushers</li>
+            <li>Corsages for mother-of-the-bride & groom & female attendants</li>
+            <li>Venue flower arrangements</li>
+            <li>Table decorations</li>
+            <li>We are always delighted to work with same sex couples too</li>
+          </ul>
+          <p>Are you a style-conscious bride-to-be in Leicester or the East Midlands looking for designer wedding flowers? My team would love to help make your big day truly special.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="castles" class="tabcontent">
+      <div class="grid pad-t">
+        <div class="gutter pad-b unit xs-1 s-1 m-1-2 l-1-2">
+          <img class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
+        </div>
+        <div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
+          <h4>Stately houses, Castles & Cathedrals</h4>
+          <p>Here at Magnificent Bouquets  we specialise in creative venue dressing, matching our flowers to the unique location of your special event.</p>
+          <p>Should you choose to work with us and your event requires it, we can visit your venue together — that’s where ideas really come to life. It gives us a real feel of what will work best for you and ensure we make your event unforgettably special.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="funeral" class="tabcontent">
+      <div class="grid pad-t">
+        <div class="gutter pad-b unit xs-1 s-1 m-1-2 l-1-2">
+          <img class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
+        </div>
+        <div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
+          <h4>Funeral Flowers</h4>
+          <p>It is always a privilege to create floral tributes that speak from the heart, expressing feelings that are hard to put into words.</p>
+          <h5>Naturial Burials</h5>
+          <p>As we are custodians of this earth for future generations, we try to work with nature as much as possible. Magnificent Bouquets specialises in creating funeral tributes which are fully biodegradable, so appropriate for Natural Burials, and yet speak straight from the heart.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="contract" class="tabcontent">
+      <div class="grid pad-t">
+        <div class="gutter pad-b unit xs-1 s-1 m-1-2 l-1-2">
+          <img class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
+        </div>
+        <div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
+          <h4>Contract Flowers & Special Events</h4>
+          <p>Or if you have a special event coming up where you require architectural floral designs or table centres that are out of this world, please don’t hesitate to get in touch. We would be delighted to discuss our constantly evolving designs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fees-section">
+  <h3 class="text-center mega heading pad-t-1-4 pad-b-1-4 push-0">Fees</h3>
+  <div class="wrapper gutter pad-t pad-b-2">
+    <p>Magnificent Bouquets create memorable flowers for all kinds of budgets. Every job is different because every flower is different, so the cost depends entirely on the blooms you choose.</p>
+    <p>Please get in touch to discuss your flowery requirements today.</p>
+  </div>
+</section>

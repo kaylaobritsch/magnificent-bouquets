@@ -1,5 +1,5 @@
 html {
-  background-color: #bb91bc;
+  background-color: #555154;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -247,7 +247,7 @@ footer {
 }
 
 .heading {
-  color: white;
+  color: #fff;
   background-color: #bb91bc;
   text-transform: uppercase;
 }
@@ -256,20 +256,21 @@ footer {
 .heading::after {
     display: inline-block;
     content: "";
-    border-top: 2px solid white;
+    border-top: 2px solid #fff;
     width: 15%;
     margin: 0 .3rem;
     transform: translateY(-.4rem);
 }
 
 .welcome-section,
-.test-section {
-  color: white;
+.test-section,
+.services-section {
+  color: #fff;
   background-color: #555154;
 }
 
 .service-section {
-  background-color: #E0DFE4;
+  background-color: #e0dfe4;
 }
 
 .card h3 {
@@ -303,14 +304,19 @@ footer {
   font-size: 10rem;
 }
 
-.social-section {
+.social-section,
+.fees-section {
   color: #555154;
   background-color: #e0dfe4;
 }
 
-.social-section h4,
 .gallery-section h4 {
   color: #fff;
+  font-family: "Playfair Display", serif;
+}
+
+.social-section h4 {
+  color: #bb91bc;
   font-family: "Playfair Display", serif;
 }
 
@@ -417,7 +423,7 @@ fieldset {
 .prev,
 .next {
   cursor: pointer;
-  color: white;
+  color: #fff;
   font-weight: bold;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -429,6 +435,48 @@ fieldset {
 .prev:focus,
 .next:hover,
 .next:focus {
+  color: #bb91bc;
+}
+
+.services-section button,
+.tab {
+  background-color: #e0dfe4;
+  border: none;
+  color: #555154;
+  transition: all .25s linear;
+}
+
+.services-section button:hover,
+.services-section button:focus {
+  background-color: #bb91bc;
+  color: #fff;
+}
+
+.tabcontent {
+  display: none;
+  animation: fading 1s linear;
+}
+
+.tabcontent-img {
+  animation: slideIn 400ms linear;
+}
+
+.tab button.active {
+  background-color: #bb91bc;
+    color: #fff;
+}
+
+.services-section h4 {
+  font-family: "Playfair Display", serif;
+}
+
+.services-section a {
+  color: #e0dfe4;
+  text-decoration: underline;
+}
+
+.services-section a:hover,
+.services-section a:focus {
   color: #bb91bc;
 }
 
@@ -482,5 +530,15 @@ fieldset {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    margin-top: 2rem;
+  }
+
+  100% {
+    margin-top: 0;
   }
 }

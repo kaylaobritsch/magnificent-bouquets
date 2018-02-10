@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-
 <head>
   <meta charset="utf-8">
   <title>{% if page.title %}{{page.title}} · {% endif %}Magnificent Bouquets</title>
@@ -66,7 +65,7 @@
 
   <footer>
     <div class="wrapper gutter pad-t pad-b-2">
-      <p class="milli">Magnificent Bouquets look forward to talking about flowers with you soon.</p>
+      <p class="milli">Magnificent Bouquets looks forward to talking about flowers with you soon.</p>
       <p class="micro push-0">Prorietor & Creative Director</p>
       <p class="micro push-0 bold">Jo Hammonds</p>
       <p class="micro push-0"> 07940 582 490</p>
@@ -175,7 +174,26 @@
 
       x[slideIndex[no]-1].style.display = "block";
     }
+  </script>
 
+  <script>
+    document.getElementById("defaultOpen").click();
+    function openService(evt, serviceName) {
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      
+      document.getElementById(serviceName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
   </script>
 </body>
 </html>
