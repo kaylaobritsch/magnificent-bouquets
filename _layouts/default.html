@@ -5,6 +5,10 @@
   <title>{% if page.title %}{{page.title}} · {% endif %}Magnificent Bouquets</title>
   <meta name="description" content="{{page.meta}}">
   <meta name="author" content="Jo Hammonds">
+  <meta name="ICBM" content="52.5987,-1.0763">
+  <meta name="geo.position" content="52.5987,-1.0763">
+  <meta name="geo.region" content="GB-LEC">
+  <meta name="geo.placename" content="Oadby">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,59 +22,72 @@
   <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Magnificent Bouquets">
+  <meta property="og:url" content="{{site.baseurl}}/{{page.og-url}}">
+  <meta property="og:image" content="{{site.baseurl}}/images/logo-og.jpg">
+  <meta property="og:site_name" content="Magnificent Bouquets">
+  <meta property="og:description" content="{{page.meta}}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@JophielsFlowers">
+  <meta name="twitter:title" content="Magnificent Bouquets">
+  <meta name="twitter:url" content="{{site.baseurl}}/{{page.og-url}}">
+  <meta name="twitter:description" content="{{page.meta}}">
+  <meta name="twitter:image" content="{{site.baseurl}}/images/logo-og.jpg">
 </head>
 <body>
+  <div itemref="data-author" itemscope itemtype="http://schema.org/Website">
+    <ul class="nav skip-links grid">
+      <li><a itemprop="url" href="{{site.baseurl}}/#main">Jump to Main Content</a></li>
+      <li><a itemprop="url" href="{{site.baseurl}}/#nav">Jump to Navigation</a></li>
+      <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-1}}">{{page.skip-link-title-1}}</a></li>
+      <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-2}}">{{page.skip-link-title-2}}</a></li>
+    </ul>
 
-  <ul class="nav skip-links grid">
-    <li><a itemprop="url" href="{{site.baseurl}}/#main">Jump to Main Content</a></li>
-    <li><a itemprop="url" href="{{site.baseurl}}/#nav">Jump to Navigation</a></li>
-    <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-1}}">{{page.skip-link-title-1}}</a></li>
-    <li><a itemprop="url" href="{{site.baseurl}}/{{page.skip-link-2}}">{{page.skip-link-title-2}}</a></li>
-  </ul>
-
-  <nav class="push-0" id="nav" role="navigation">
-    <div class="contact-top gutter pad-b-1-4 push-0">
-      <ul class="wrapper pad-t-1-4 push-0 list-group-inline text-right">
-        <li><a class="micro push-r" href="tel:+44 7940 582490"><i class="icon i-18 gutter-1-2"><svg><use xlink:href="{{site.baseurl}}/images/icons.svg#phone"></use></svg></i>7940 582490</a></li>
-        <li><a class="micro" href="mailto:magnificentbouquets@gmail.com" subject="Let's Talk Flowers!"><i class="icon i-18 gutter-1-2"><svg><use xlink:href="{{site.baseurl}}/images/icons.svg#email"></use></svg></i>magnificentbouquets@gmail.com</a></li>
-      </ul>
-    </div>
-
-    <header class="header">
-      <div class="wrapper top-nav grid grid-middle gutter push-0 pad-t-1-2 pad-b-1-4">
-        <div class="unit xs-1-2 l-1-5 logo push-1-2">
-          <a itemprop="url" href="{{site.baseurl}}/">
-            <img class="img-flex" src="{{site.baseurl}}/images/magnificent-bouquets-logo.png">
-          </a>
-        </div>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="nav-list menu menu-1 push-0 unit xs-1 l-2-5 gutter-0">
-          <li class="block milli gutter-1-2 island-1-2"><a href="{{site.baseurl}}/services/" {% if page.url == '/services/' %} class="current" {% endif %}>Services</a></li>
-          <li class="block milli gutter-1-2 island-1-2"><a href="{{site.baseurl}}/about/" {% if page.url == '/about/' %} class="current" {% endif %}>About</a></li>
-          <li class="block milli gutter-1-2 island-1-2"><a href="{{site.baseurl}}/gallery/" {% if page.url == '/gallery/' %} class="current" {% endif %}>Gallery</a></li>
-        </ul>
-        <ul class="nav-list menu menu-2 push-0 unit xs-1 l-2-5">
-          <li class="block milli gutter-1-2 island-1-2" ><a itemprop="url" href="https://magnificentbouquets.tumblr.com/">Blog</a></li>
-          <li class="block milli gutter-1-2 island-1-2"><a href="{{site.baseurl}}/contact/" {% if page.url == '/contact/' %} class="current" {% endif %}>Contact</a></li>
-          <li class="block milli island-1-2"><a itemprop="url" href="{{site.baseurl}}/#testimonials" {% if page.url == '/#testimonials/' %} class="current" {% endif %}>Testimonials</a></li>
+    <nav class="push-0" id="nav" role="navigation">
+      <div class="contact-top gutter pad-b-1-4 push-0">
+        <ul class="wrapper pad-t-1-4 push-0 list-group-inline text-right">
+          <li><a itemprop="telephone" class="micro push-r" href="tel:+447940582490"><i class="icon i-18 gutter-1-2"><svg><use xlink:href="{{site.baseurl}}/images/icons.svg#phone"></use></svg></i>7940 582 490</a></li>
+          <li><a itemprop="email" class="micro" href="mailto:magnificentbouquets@gmail.com" subject="Let's Talk Flowers!"><i class="icon i-18 gutter-1-2"><svg><use xlink:href="{{site.baseurl}}/images/icons.svg#email"></use></svg></i>magnificentbouquets@gmail.com</a></li>
         </ul>
       </div>
-    </header>
-  </nav>
 
-  <main>
-    {{content}}
-  </main>
+      <header class="header">
+        <div class="wrapper top-nav grid grid-middle gutter push-0 pad-t-1-2 pad-b-1-4">
+          <div class="unit xs-1-2 l-1-5 logo push-1-2">
+            <a itemprop="url" rel="home" href="{{site.baseurl}}/">
+              <img itemprop="logo" class="img-flex" src="{{site.baseurl}}/images/magnificent-bouquets-logo.png">
+            </a>
+          </div>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="nav-list menu menu-1 push-0 unit xs-1 l-2-5 gutter-0">
+            <li class="block milli gutter-1-2 island-1-2"><a href="{{site.baseurl}}/services/" {% if page.url == '/services/' %} class="current" {% endif %}>Services</a></li>
+            <li class="block milli gutter-1-2 island-1-2"><a href="{{site.baseurl}}/about/" {% if page.url == '/about/' %} class="current" {% endif %}>About</a></li>
+            <li class="block milli gutter-1-2 island-1-2"><a href="{{site.baseurl}}/gallery/" {% if page.url == '/gallery/' %} class="current" {% endif %}>Gallery</a></li>
+          </ul>
+          <ul class="nav-list menu menu-2 push-0 unit xs-1 l-2-5">
+            <li class="block milli gutter-1-2 island-1-2" ><a itemprop="url" href="https://magnificentbouquets.tumblr.com/">Blog</a></li>
+            <li class="block milli gutter-1-2 island-1-2"><a href="{{site.baseurl}}/contact/" {% if page.url == '/contact/' %} class="current" {% endif %}>Contact</a></li>
+            <li class="block milli island-1-2"><a itemprop="url" href="{{site.baseurl}}/#testimonials" {% if page.url == '/#testimonials/' %} class="current" {% endif %}>Testimonials</a></li>
+          </ul>
+        </div>
+      </header>
+    </nav>
 
-  <footer>
+    <main>
+      {{content}}
+    </main>
+  </div>
+
+  <footer id="data-author" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <div class="wrapper gutter pad-t pad-b-2">
       <p class="milli">Magnificent Bouquets looks forward to talking about flowers with you soon.</p>
-      <p class="micro push-0">Prorietor & Creative Director</p>
-      <p class="micro push-0 bold">Jo Hammonds</p>
-      <p class="micro push-0"> 07940 582 490</p>
-      <a href="mailto:magnificentbouquets@gmail.com" subject="Let's Talk Flowers!" class="micro">magnificentbouquets@gmail.com</a>
-      <p class="micro push-0 italic place">Magnificent Bouquets, Oadby, Leicestershire, England</p>
+      <p class="micro push-0" itemprop="jobTitle">Prorietor & Creative Director</p>
+      <p class="micro push-0 bold" itemprop="name">Jo Hammonds</p>
+      <a class="micro push-0 block" href="tel:+447940582490" itemprop="telephone">07940 582 490</a>
+      <a href="mailto:magnificentbouquets@gmail.com" subject="Let's Talk Flowers!" class="micro" itemprop="email">magnificentbouquets@gmail.com</a>
+      <p class="micro push-0 italic place pad-t-1-2">Magnificent Bouquets, <span itemprop="addressLocality">Oadby</span>, <span itemprop="addressRegion">Leicestershire</span>, <itemprop="addressCountry">England</span></p>
       <small class="micro push-0">© Magnificent Bouquets 2016. All rights reserved.</small>
     </div>
   </footer>
@@ -190,7 +207,7 @@
       for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
-      
+
       document.getElementById(serviceName).style.display = "block";
       evt.currentTarget.className += " active";
     }
