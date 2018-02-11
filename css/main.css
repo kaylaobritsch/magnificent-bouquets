@@ -20,8 +20,8 @@ a {
   transition: all .25s linear;
 }
 
-.top-nav a:hover,
-.top-nav a:focus,
+.header a:hover,
+.header a:focus,
 .current {
   color: #bb91bc !important;
 }
@@ -31,7 +31,7 @@ a {
 }
 
 .contact-top a {
-  color: white;
+  color: #fff;
 }
 
 .contact-top a:hover,
@@ -41,7 +41,7 @@ a {
 }
 
 .header {
-  background-color: white;
+  background-color: #fff;
   width: 100%;
   z-index: 3;
 }
@@ -50,13 +50,16 @@ a {
   overflow: hidden;
 }
 
-.header li,
+.nav-list a,
 .header .menu-btn {
   background-color: #eee;
+  display: block;
+  padding: 1rem 2rem 1rem .5rem;
+  width: 100%;
 }
 
 .header a:hover {
-  background-color: white;
+  background-color: #fff;
 }
 
 .header ul {
@@ -353,6 +356,7 @@ footer a {
 }
 
 fieldset {
+  padding: 0;
   border-top: none;
 }
 
@@ -360,15 +364,22 @@ fieldset {
   fill: #fff;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: #bb91bc;
+}
+
 .is-validated input:invalid,
 .is-validated textarea:invalid,
 .is-validated input[type="checkbox"]:invalid + label::before {
   border-color: #bb91bc;
+  border-width: medium;
 }
 
 .is-validated input:invalid ~ .form-background,
 .is-validated textarea:invalid ~ .form-background-question {
   background-color: #bb91bc;
+  border-width: medium;
 }
 
 .error-message {
@@ -376,15 +387,7 @@ fieldset {
   color:  #fff;
 }
 
-.error-message-highlighted {
-  color: #bb91bc;
-}
-
-.error-message-highlighted:focus {
-  outline: none;
-}
-
-.is-validated > .error-message:first-child,
+.is-validated .error-message,
 .is-validated input:invalid + .error-message,
 .is-validated textarea:invalid + .error-message,
 .is-validated input:invalid + label + .error-message {
@@ -470,22 +473,11 @@ fieldset {
   font-family: "Playfair Display", serif;
 }
 
-.services-section a {
-  color: #e0dfe4;
-  text-decoration: underline;
-}
-
-.services-section a:hover,
-.services-section a:focus {
-  color: #bb91bc;
-}
-
 @media only screen and (min-width: 38em) {
 
   .card {
     width: 31.5%;
   }
-
 }
 
 
@@ -508,6 +500,13 @@ fieldset {
 
   .header .menu-icon {
     display: none;
+  }
+
+  .nav-list a {
+    background-color: transparent;
+    display: inline;
+    margin: .25rem;
+    padding: 0;
   }
 
   .menu-1 {

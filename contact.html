@@ -4,49 +4,53 @@ meta: With an unrivalled reputation for quality and style, Magnificent Bouquets 
 title: Contact
 ---
 
-{% include banner.html image="placeholder-16by9.svg" alt="contact banner" title="Contact Us" txt="Magnificent Bouquets look forward to talking
+{% include banner.html image="placeholder-3by2.svg" alt="contact banner" title="Contact Us" txt="Magnificent Bouquets look forward to talking
 about flowers with you soon<br>" btn-hidden="hidden"%}
 
 <section class="contact-section">
   <h3 class="text-center mega heading pad-t-1-4 pad-b-1-4 push-0">Message Us</h3>
-  <form method="POST" novalidate action="https://formspree.io/magnificentbouquets@gmail.com">
-    <fieldset class="wrapper gutter pad-t pad-b-2 push-0">
-      <legend class="contact-legend">Contact Us</legend>
-      <div class="error-message error-message-highlighted push" role="alert" aria-live="assertive">
-        <h3 class="push-0 tera warning text-center pad-t pad-b gutter">There was an error with the highlighted fields below</h3>
+  <div class="grid wrapper gutter-1-2 pad-t pad-b-2">
+    <div class="unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
+      <div class="embed embed-1by1">
+        <iframe class="embed-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38775.757714296604!2d-1.1079160872585259!3d52.59700633607052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6961284d4f9d44f!2sMagnificent+Bouquets!5e0!3m2!1sen!2sca!4v1518304594054" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
+    </div>
+    <form class="unit xs-1 s-1 m-1-2 l-1-2" method="POST" novalidate action="https://formspree.io/magnificentbouquets@gmail.com">
+      <fieldset class="wrapper gutter-1-2 push-0">
+        <legend class="contact-legend">Contact Us</legend>
 
-      <div class="push-1-2">
-        <label for="name">Name</label>
-        <div>
-          <input id="name" class="w-1" name="name" required aria-describedby="name-error" placeholder="First Last">
-          <p class="error-message milli pad-t-1-4 push-1-2" id="name-error"><i class="icon i-24 gutter"><svg class="warning"><use xlink:href="{{site.baseurl}}/images/icons.svg#warning"></use></svg></i>Please provide a full name</p>
+        <div class="push-1-2">
+          <label for="name">Name</label>
+          <div>
+            <input id="name" class="w-1" name="name" required aria-describedby="name-error" placeholder="First Last">
+            <p class="error-message milli pad-t-1-4 push-1-2" id="name-error"><i class="icon i-24 gutter"><svg class="warning"><use xlink:href="{{site.baseurl}}/images/icons.svg#warning"></use></svg></i>Please provide a full name</p>
+          </div>
         </div>
-      </div>
 
-      <div class="push-1-2">
-        <label for="email">Email</label>
-        <div>
-          <input id="email" class="w-1" name="_replyto" required aria-describedby="email-error" placeholder="hello@youremail.com">
-          <p class="error-message milli pad-t-1-4 push-1-2" id="email-error"><i class="icon i-24 gutter"><svg class="warning"><use xlink:href="{{site.baseurl}}/images/icons.svg#warning"></use></svg></i>Please provide a proper e-mail</p>
+        <div class="push-1-2">
+          <label for="email">Email</label>
+          <div>
+            <input id="email" class="w-1" name="_replyto" required aria-describedby="email-error" placeholder="hello@youremail.com">
+            <p class="error-message milli pad-t-1-4 push-1-2" id="email-error"><i class="icon i-24 gutter"><svg class="warning"><use xlink:href="{{site.baseurl}}/images/icons.svg#warning"></use></svg></i>Please provide a proper e-mail</p>
+          </div>
         </div>
-      </div>
 
-      <div class="push-1-2">
-        <label for="message">Message</label>
-        <div>
-          <textarea name="message" id="message" class="w-1" required aria-describedby="message-error" placeholder="Just wanted to say…"></textarea>
-          <p class="error-message milli pad-t-1-4 push-1-2" id="message-error"><i class="icon i-24 gutter"><svg class="warning"><use xlink:href="{{site.baseurl}}/images/icons.svg#warning"></use></svg></i>Please tell us your comment</p>
+        <div class="push-1-2">
+          <label for="message">Message</label>
+          <div>
+            <textarea name="message" id="message" class="w-1" required aria-describedby="message-error" placeholder="Just wanted to say…"></textarea>
+            <p class="error-message milli pad-t-1-4 push-1-2" id="message-error"><i class="icon i-24 gutter"><svg class="warning"><use xlink:href="{{site.baseurl}}/images/icons.svg#warning"></use></svg></i>Please tell us your comment</p>
+          </div>
         </div>
-      </div>
 
-      <div>
-        <input type="hidden" name="_subject" value="Flower Inquiry">
-      </div>
+        <div>
+          <input type="hidden" name="_subject" value="Flower Inquiry">
+        </div>
 
-      <div class="pad-t-1-2">
-        <button class="btn btn-ghost" value="Send" type="submit">Send Now</button>
-      </div>
-    </fieldset>
-  </form>
+        <div class="pad-t-1-2">
+          <button class="btn btn-ghost" value="Send" type="submit">Send Now</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
 </section>
