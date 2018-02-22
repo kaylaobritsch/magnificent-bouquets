@@ -1,11 +1,11 @@
 <section class="banner relative embed embed-3by2">
   <div>
     <div class="embed-item">
-      <img class="img-flex"  alt="{{include.alt}}" src="{{site.baseurl}}/images/{{include.image}}">
+      <img itemprop="image" class="img-flex" alt="{{include.alt}}" src="{{site.baseurl}}/images/{{include.image}}">
     </div>
     <div class="banner-text text-center island-1-2">
       <h2 class="push-0 exa">{{include.title}}</h2>
-      <p>{{include.txt}}</p>
+      <p itemprop="description">{{include.txt}}</p>
       <a class="btn btn-ghost push-1-2 {{include.btn-hidden}}" href="{{site.baseurl}}/{{include.btn-link}}">{{include.btn-txt}}</a>
     </div>
   </div>

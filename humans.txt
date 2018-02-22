@@ -1,0 +1,5 @@
+Magnificentbouquets.com was designed & hand coded by [Kayla Obritsch](http://kaylaobritsch.ca/) using GitHub, Markdown, JavaScript and Jekyll.
+
+A special thanks goes out to Thomas J Bradley, professor at Algonquin College, for providing me with so many web dev learning opportunities. As well as the web tools—gridifier, typografier, modulifier and Spritebot found at https://learn-the-web.algonquindesign.ca/.
+
+All images belong to © Magnificent Bouquets 2018. All rights reserved.

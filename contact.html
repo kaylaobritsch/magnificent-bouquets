@@ -2,12 +2,17 @@
 layout: default
 meta: With an unrivalled reputation for quality and style, Magnificent Bouquets designs creative, luxury flowers in Oadby, Leicester, East Midlands. Magnificent Bouquets also designs straight from the heart, sympathy with empathy flowers.
 title: Contact
+og-url: contact
+priority: 0.5
+changefreq: monthly
+skip-link-1: message
+skip-link-title-1: Jump to Message Us
 ---
 
 {% include banner.html image="placeholder-3by2.svg" alt="contact banner" title="Contact Us" txt="Magnificent Bouquets look forward to talking
 about flowers with you soon<br>" btn-hidden="hidden"%}
 
-<section class="contact-section">
+<section class="contact-section" id="message" itemref itemscope itemtype="http://schema.org/Message">
   <h3 class="text-center mega heading pad-t-1-4 pad-b-1-4 push-0">Message Us</h3>
   <div class="grid wrapper gutter-1-2 pad-t pad-b-2">
     <div class="unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
@@ -22,7 +27,7 @@ about flowers with you soon<br>" btn-hidden="hidden"%}
         <div class="push-1-2">
           <label for="name">Name</label>
           <div>
-            <input id="name" class="w-1" name="name" required aria-describedby="name-error" placeholder="First Last">
+            <input itemprop="sender" id="name" class="w-1" name="name" required aria-describedby="name-error" placeholder="First Last">
             <p class="error-message milli pad-t-1-4 push-1-2" id="name-error"><i class="icon i-24 gutter"><svg class="warning"><use xlink:href="{{site.baseurl}}/images/icons.svg#warning"></use></svg></i>Please provide a full name</p>
           </div>
         </div>
@@ -44,7 +49,7 @@ about flowers with you soon<br>" btn-hidden="hidden"%}
         </div>
 
         <div>
-          <input type="hidden" name="_subject" value="Flower Inquiry">
+          <input itemprop="about" type="hidden" name="_subject" value="Flower Inquiry">
         </div>
 
         <div class="pad-t-1-2">

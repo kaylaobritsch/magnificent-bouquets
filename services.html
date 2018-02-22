@@ -1,12 +1,19 @@
 ---
 layout: default
-meta:
-og-url: services/
+meta: Magnificent Bouquets provides seasonal bouquets and fruit baskets. As well as providing all your flowery requirements for weddings, castles, funerals and other special events.
+title: Services
+og-url: services
+priority: 0.5
+changefreq: monthly
+skip-link-1: services
+skip-link-title-1: Jump to Services
+skip-link-2: fees
+skip-link-title-2: Jump to Fees
 ---
 
 {% include banner.html image="placeholder-3by2.svg" alt="about banner" title="Services" txt="It all starts with a free consultation" btn-link="contact/" btn-txt="Contact Us" %}
 
-<section class="services-section">
+<section class="services-section" id="services">
   <h3 class="text-center mega heading pad-t-1-4 pad-b-1-4 push-0">Services</h3>
   <div class="tab">
     <div class="wrapper gutter">
@@ -21,9 +28,9 @@ og-url: services/
     <div id="seasonal" class="tabcontent">
       <div class="grid pad-t">
         <div class="gutter pad-b unit xs-1 s-1 m-1-2 l-1-2">
-          <img class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
+          <img itemprop="image" class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
         </div>
-        <div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
+        <div itemprop="amenityFeature" class="gutter unit xs-1 s-1 m-1-2 l-1-2">
           <h4>Seasonal Bouquets & Fruit Baskets</h4>
           <p>Over a cup of tea and a slice of cake, we can look at my work albums, flick through design books and have a good chat about colours, styles and all things floral.</p>
           <p>We also create eye catching fruit baskets packed full of vitamins and goodness. So if you prefer to send fresh fruit to your dear one, please give us a <a class="link" href="{{site.baseurl}}/contact/">call today.</a></p>
@@ -35,9 +42,9 @@ og-url: services/
     <div id="wedding" class="tabcontent">
       <div class="grid pad-t">
         <div class="gutter pad-b unit xs-1 s-1 m-1-2 l-1-2">
-          <img class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
+          <img itemprop="image" class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
         </div>
-        <div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
+        <div itemprop="amenityFeature" class="gutter unit xs-1 s-1 m-1-2 l-1-2">
           <h4>Weddings</h4>
           <p>We can create as much or little as you want – from a show-stopping bridal bouquet to a full range of stylish wedding flowers for everyone and everywhere.</p>
           <ul>
@@ -57,10 +64,10 @@ og-url: services/
     <div id="castles" class="tabcontent">
       <div class="grid pad-t">
         <div class="gutter pad-b unit xs-1 s-1 m-1-2 l-1-2">
-          <img class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
+          <img itemprop="image" class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
         </div>
         <div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
-          <h4>Stately houses, Castles & Cathedrals</h4>
+          <h4 itemprop="amenityFeature">Stately houses, Castles & Cathedrals</h4>
           <p>Here at Magnificent Bouquets  we specialise in creative venue dressing, matching our flowers to the unique location of your special event.</p>
           <p>Should you choose to work with us and your event requires it, we can visit your venue together — that’s where ideas really come to life. It gives us a real feel of what will work best for you and ensure we make your event unforgettably special.</p>
         </div>
@@ -70,10 +77,10 @@ og-url: services/
     <div id="funeral" class="tabcontent">
       <div class="grid pad-t">
         <div class="gutter pad-b unit xs-1 s-1 m-1-2 l-1-2">
-          <img class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
+          <img itemprop="image" class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
         </div>
         <div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
-          <h4>Funeral Flowers</h4>
+          <h4 itemprop="amenityFeature">Funeral Flowers</h4>
           <p>It is always a privilege to create floral tributes that speak from the heart, expressing feelings that are hard to put into words.</p>
           <h5>Naturial Burials</h5>
           <p>As we are custodians of this earth for future generations, we try to work with nature as much as possible. Magnificent Bouquets specialises in creating funeral tributes which are fully biodegradable, so appropriate for Natural Burials, and yet speak straight from the heart.</p>
@@ -84,10 +91,10 @@ og-url: services/
     <div id="contract" class="tabcontent">
       <div class="grid pad-t">
         <div class="gutter pad-b unit xs-1 s-1 m-1-2 l-1-2">
-          <img class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
+          <img itemprop="image" class="img-flex tabcontent-img"  alt="" src="{{site.baseurl}}/images/placeholder-16by9.svg">
         </div>
         <div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
-          <h4>Contract Flowers & Special Events</h4>
+          <h4 itemprop="amenityFeature">Contract Flowers & Special Events</h4>
           <p>Or if you have a special event coming up where you require architectural floral designs or table centres that are out of this world, please don’t hesitate to get in touch. We would be delighted to discuss our constantly evolving designs.</p>
         </div>
       </div>
@@ -95,7 +102,7 @@ og-url: services/
   </div>
 </section>
 
-<section class="fees-section">
+<section class="fees-section" id="fees">
   <h3 class="text-center mega heading pad-t-1-4 pad-b-1-4 push-0">Fees</h3>
   <div class="wrapper gutter pad-t pad-b-2">
     <p itemprop=”priceRange”>Magnificent Bouquets create memorable flowers for all kinds of budgets. Every job is different because every flower is different, so the cost depends entirely on the blooms you choose.</p>

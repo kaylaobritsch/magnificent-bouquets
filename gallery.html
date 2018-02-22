@@ -2,11 +2,16 @@
 layout: default
 meta: A gallery of Magnificent Bouquet's luxury seasonal bouquets & fruit baskets, weddings, stately houses, castles & cathedrals, funeral flowers, contract flowers & special flowers.
 title: Gallery
+og-url: gallery
+priority: 0.5
+changefreq: monthly
+skip-link-1: designs
+skip-link-title-1: Jump to Signature Designs
 ---
 
 {% include banner.html image="placeholder-3by2.svg" alt="gallery banner" title="Gallery" txt="Here are some of our signature designs" btn-link="contact/" btn-txt="Contact Us" %}
 
-<section class="gallery-section">
+<section itemref itemscope itemtype="http://schema.org/CreativeWork" class="gallery-section" id="designs">
   <h3 class="text-center mega heading pad-t-1-4 pad-b-1-4 push-0">Signature Designs</h3>
   <div class="pad-t pad-b-2">
     {% include gallery-section.html heading="Seasonal Bouquets & Fruit Baskets" image-1="placeholder-1by1.svg" alt-1="" image-2="placeholder-1by1.svg" alt-2="" image-3="placeholder-3by2.svg" alt-3="" txt="Whether it’s a birthday, a christening, a thank you, an apology (!), a new baby, an “I love you” or anything else, we carry a range of seasonal blooms to cater for all those “need to send flowers” moments." btn-txt="View All" mod-btn="basket-btn" %}
@@ -20,32 +25,32 @@ title: Gallery
     {% include gallery-section.html heading="Contract Flowers & Special Events" image-1="placeholder-1by1.svg" alt-1="" image-2="placeholder-1by1.svg" alt-2="" image-3="placeholder-3by2.svg" alt-3="" txt="For businesses, restaurants, hotels and homes we provide a regular contract service of fresh floral designs and arrangements, styled to add interest and a focal point for your customers." btn-link="" btn-txt="View All" mod-btn="contract-btn" %}
   </div>
 
-  <div id="modal-basket" class="modal pad-t">
+  <div itemprop="exampleOfWork" id="modal-basket" class="modal pad-t">
     <div class="wrapper gutter">
       <h4 class="peta push-1-2">Seasonal Bouquets & Fruit Baskets</h4>
       <div class="modal-content relative">
         <span class="close absolute pin-top-right nina" onclick="closeModal()">x</span>
         <div class="gallerySlide">
           <div class="tera absolute pin-top-left island-1-2">1 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Seasonal Bouquets 1</p>
         </div>
 
         <div class="gallerySlide">
           <div class="tera absolute pin-top-left island-1-2">2 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Seasonal Bouquets 2</p>
         </div>
 
         <div class="gallerySlide">
           <div class="tera absolute pin-top-left island-1-2">3 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Seasonal Bouquets 3</p>
         </div>
 
         <div class="gallerySlide">
           <div class="tera absolute pin-top-left island-1-2">4 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Seasonal Bouquets 4</p>
         </div>
 
@@ -55,32 +60,32 @@ title: Gallery
     </div>
   </div>
 
-  <div id="modal-wedding" class="modal pad-t">
+  <div itemprop="exampleOfWork" id="modal-wedding" class="modal pad-t">
     <div class="wrapper gutter">
       <h4 class="peta push-1-2">Weddings</h4>
       <div class="modal-content relative">
         <span class="close absolute pin-top-right nina" onclick="closeModal()">x</span>
         <div class="gallerySlide2">
           <div class="tera absolute pin-top-left island-1-2">1 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" lass="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Weddings 1</p>
         </div>
 
         <div class="gallerySlide2">
           <div class="tera absolute pin-top-left island-1-2">2 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Weddings 2</p>
         </div>
 
         <div class="gallerySlide2">
           <div class="tera absolute pin-top-left island-1-2">3 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Weddings 3</p>
         </div>
 
         <div class="gallerySlide2">
           <div class="tera absolute pin-top-left island-1-2">4 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Weddings 4</p>
         </div>
 
@@ -90,32 +95,32 @@ title: Gallery
     </div>
   </div>
 
-  <div id="modal-stately" class="modal pad-t">
+  <div itemprop="exampleOfWork" id="modal-stately" class="modal pad-t">
     <div class="wrapper gutter">
       <h4 class="peta push-1-2">Stately houses, Castles & Cathedrals</h4>
       <div class="modal-content relative">
         <span class="close absolute pin-top-right nina" onclick="closeModal()">x</span>
         <div class="gallerySlide3">
           <div class="tera absolute pin-top-left island-1-2">1 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Stately houses, Castles & Cathedrals 1</p>
         </div>
 
         <div class="gallerySlide3">
           <div class="tera absolute pin-top-left island-1-2">2 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Stately houses, Castles & Cathedrals 2</p>
         </div>
 
         <div class="gallerySlide3">
           <div class="tera absolute pin-top-left island-1-2">3 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Stately houses, Castles & Cathedrals 3</p>
         </div>
 
         <div class="gallerySlide3">
           <div class="tera absolute pin-top-left island-1-2">4 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Stately houses, Castles & Cathedrals 4</p>
         </div>
 
@@ -125,32 +130,32 @@ title: Gallery
     </div>
   </div>
 
-  <div id="modal-funeral" class="modal pad-t">
+  <div itemprop="exampleOfWork" id="modal-funeral" class="modal pad-t">
     <div class="wrapper gutter">
       <h4 class="peta push-1-2">Funeral Flowers</h4>
       <div class="modal-content relative">
         <span class="close absolute pin-top-right nina" onclick="closeModal()">x</span>
         <div class="gallerySlide4">
           <div class="tera absolute pin-top-left island-1-2">1 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Funeral Flowers 1</p>
         </div>
 
         <div class="gallerySlide4">
           <div class="tera absolute pin-top-left island-1-2">2 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Funeral Flowers 2</p>
         </div>
 
         <div class="gallerySlide4">
           <div class="tera absolute pin-top-left island-1-2">3 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Funeral Flowers 3</p>
         </div>
 
         <div class="gallerySlide4">
           <div class="tera absolute pin-top-left island-1-2">4 / 4</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Funeral Flowers 4</p>
         </div>
 
@@ -160,38 +165,38 @@ title: Gallery
     </div>
   </div>
 
-  <div id="modal-contract" class="modal pad-t">
+  <div itemprop="exampleOfWork" id="modal-contract" class="modal pad-t">
     <div class="wrapper gutter">
       <h4 class="peta push-1-2">Contract Flowers & Special Events</h4>
       <div class="modal-content relative">
         <span class="close absolute pin-top-right nina" onclick="closeModal()">x</span>
         <div class="gallerySlide5">
           <div class="tera absolute pin-top-left island-1-2">1 / 5</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Contract Flowers 1</p>
         </div>
 
         <div class="gallerySlide5">
           <div class="tera absolute pin-top-left island-1-2">2 / 5</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Contract Flowers 2</p>
         </div>
 
         <div class="gallerySlide5">
           <div class="tera absolute pin-top-left island-1-2">3 / 5</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Contract Flowers 3</p>
         </div>
 
         <div class="gallerySlide5">
           <div class="tera absolute pin-top-left island-1-2">4 / 5</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Contract Flowers 4</p>
         </div>
 
         <div class="gallerySlide5">
           <div class="tera absolute pin-top-left island-1-2">5 / 5</div>
-          <img class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
+          <img itemprop="image" class="img-flex" src="{{site.baseurl}}/images/placeholder-3by2.svg">
           <p class="pad-t-1-2">Contract Flowers 5</p>
         </div>
 
