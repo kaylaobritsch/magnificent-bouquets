@@ -1,12 +1,12 @@
-<div class="wrapper pad-b-2">
-  <h4 class="peta gutter-1-2 push-0">{{include.heading}}</h4>
+<div class="wrapper pad-b-2" itemprop="exampleOfWork">
+  <h4 class="peta gutter-1-2 push-0" itemprop="name">{{include.heading}}</h4>
   <div class="gutter-1-2 push-1-2">
     <svg id="rectangle-302" viewBox="4437 9750 142 11" width="142" height="11">
       <defs><style>.cls-1{fill:#fff}</style></defs>
       <rect id="rect" width="142" height="11" class="cls-1" transform="translate(4437 9750)"/>
     </svg>
   </div>
-  <div itemprop="exampleOfWork" class="grid gutter-1-4">
+  <div class="grid gutter-1-4">
     <div class="unit xs-1 s-1 m-1-2 l-1-2">
       <div class="grid">
         <div class="unit xs-1-4">
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
-      <p class="milli">{{include.txt}}</p>
+      <p class="milli" itemprop="description">{{include.txt}}</p>
       <a id="{{include.mod-btn}}" class="btn btn-ghost push-1-2">{{include.btn-txt}}</a>
     </div>
   </div>
