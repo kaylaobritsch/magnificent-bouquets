@@ -65,12 +65,12 @@ function showDivsModal(n, no) {
     x[i].style.transform = "translate3d(0rem, -50%, 0rem)";
   }
 
-  x[slideIndex[no]-1].style.display = "block";
-  x[slideIndex[no]-1].style.transform = "translate3d(0rem, -50%, 0rem)";
+  x[slideIndex[no]].style.display = "block";
+  x[slideIndex[no]].style.transform = "translate3d(0rem, -50%, 0rem)";
 
-  x[slideIndex[no]-2].style.display = "block"
-  x[slideIndex[no]-2].style.transform = "translate3d(-36rem, -50%, 0rem)";
+  x[slideIndex[no]-1].style.display = "block"
+  x[slideIndex[no]-1].style.transform = "translate3d(-36rem, -50%, 0rem)";
 
-  x[slideIndex[no]-0].style.display = "block"
-  x[slideIndex[no]-0].style.transform = "translate3d(36rem, -50%, 0rem)";
+  x[slideIndex[no]+1].style.display = "block"
+  x[slideIndex[no]+1].style.transform = "translate3d(36rem, -50%, 0rem)";
 }

@@ -442,9 +442,9 @@ textarea::placeholder {
 }
 
 .gallerySlide4 {
+  display: none;
   max-width: 50em;
   position: absolute;
-
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
@@ -454,38 +454,11 @@ textarea::placeholder {
 }
 
 .carousel-inner {
+  background-color: #474546;
   height: 47rem;
   width: 35rem;
   overflow: hidden;
 }
-
-/* .modal-content > .next,
-.modal-content > .prev {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.modal-content > .next {
-  left: 100%;
-}
-
-.modal-content > .prev {
-  left: -100%;
-}
-
-.modal-content > .next.left,
-.modal-content > .prev.right {
-  left: 0;
-}
-
-.modal-content > .active.left {
-  left: -100%;
-}
-
-.modal-content > .active.right {
-  left: 100%;
-} */
 
 .modal-wrapper {
   height: 49rem;
