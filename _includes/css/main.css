@@ -11,6 +11,12 @@ a {
   max-width: 60em;
 }
 
+.gallery-wrapper {
+  max-width: 50em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .hidden {
   display: none;
 }
@@ -425,13 +431,19 @@ textarea::placeholder {
 
 .prev,
 .next {
+  background-color: rgba(85, 81, 84, .75);
   cursor: pointer;
   color: #fff;
   font-weight: bold;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+}
+
+
+.modal-wrapper {
+  height: 49rem;
+  width: 35rem;
 }
 
 .prev:hover,
@@ -460,17 +472,9 @@ textarea::placeholder {
   animation: fading 1s linear;
 }
 
-.tabcontent-img {
-  animation: slideIn 400ms linear;
-}
-
 .tab button.active {
   background-color: #bb91bc;
     color: #fff;
-}
-
-.services-section h4 {
-  font-family: "Playfair Display", serif;
 }
 
 @media only screen and (min-width: 38em) {
@@ -528,6 +532,18 @@ textarea::placeholder {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  #seasonal,
+  #wedding,
+  #castles,
+  #funeral,
+  #contract {
+    height: 35rem;
+  }
+
+  .tabcontent-img {
+    animation: slideIn 400ms linear;
   }
 }
 
