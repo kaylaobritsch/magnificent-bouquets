@@ -432,7 +432,7 @@ textarea::placeholder {
 
 .prev,
 .next {
-  background-color: rgba(85, 81, 84, .75);
+  background-color: rgba(71, 69, 70, .75);
   cursor: pointer;
   color: #fff;
   font-weight: bold;
@@ -454,7 +454,7 @@ textarea::placeholder {
 }
 
 .carousel-inner {
-  background-color: #474546;
+  border: solid 5px #474546;
   height: 47rem;
   width: 35rem;
   overflow: hidden;
