@@ -420,6 +420,7 @@ textarea::placeholder {
   font-weight: bold;
   margin-top: -.75em;
   margin-right: -.2em;
+  z-index: 1000;
 }
 
 .close:hover,
@@ -440,6 +441,51 @@ textarea::placeholder {
   -webkit-user-select: none;
 }
 
+.gallerySlide4 {
+  max-width: 50em;
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.carousel-inner {
+  height: 47rem;
+  width: 35rem;
+  overflow: hidden;
+}
+
+/* .modal-content > .next,
+.modal-content > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.modal-content > .next {
+  left: 100%;
+}
+
+.modal-content > .prev {
+  left: -100%;
+}
+
+.modal-content > .next.left,
+.modal-content > .prev.right {
+  left: 0;
+}
+
+.modal-content > .active.left {
+  left: -100%;
+}
+
+.modal-content > .active.right {
+  left: 100%;
+} */
 
 .modal-wrapper {
   height: 49rem;
@@ -483,7 +529,6 @@ textarea::placeholder {
     width: 31.5%;
   }
 }
-
 
 @media only screen and (min-width: 60em) {
 
