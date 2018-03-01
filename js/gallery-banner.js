@@ -37,40 +37,40 @@ function closeModal() {
   document.getElementById('modal-contract').style.display = "none";
 }
 
-var slideIndex = [1,1,1,1,1];
-var slideId = ["gallerySlide", "gallerySlide2", "gallerySlide3", "gallerySlide4", "gallerySlide5"]
-showDivsModal(1, 0);
-showDivsModal(1, 1);
-showDivsModal(1, 2);
-showDivsModal(1, 3);
-showDivsModal(1, 4);
+// var slideIndex = [1,1,1,1,1];
+// var slideId = ["gallerySlide", "gallerySlide2", "gallerySlide3", "gallerySlide4", "gallerySlide5"]
+// showDivsModal(1, 0);
+// showDivsModal(1, 1);
+// showDivsModal(1, 2);
+// showDivsModal(1, 3);
+// showDivsModal(1, 4);
+//
+// function plusDivsModal(n, no) {
+//   showDivsModal(slideIndex[no] += n, no);
+// }
 
-function plusDivsModal(n, no) {
-  showDivsModal(slideIndex[no] += n, no);
-}
-
-function showDivsModal(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {
-    slideIndex[no] = 1
-  }
-
-  if (n < 1) {
-    slideIndex[no] = x.length
-  }
-
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-    x[i].style.transform = "translate3d(0rem, -50%, 0rem)";
-  }
-
-  x[slideIndex[no]].style.display = "block";
-  x[slideIndex[no]].style.transform = "translate3d(0rem, -50%, 0rem)";
-
-  x[slideIndex[no]-1].style.display = "block"
-  x[slideIndex[no]-1].style.transform = "translate3d(-36rem, -50%, 0rem)";
-
-  x[slideIndex[no]+1].style.display = "block"
-  x[slideIndex[no]+1].style.transform = "translate3d(36rem, -50%, 0rem)";
-}
+// function showDivsModal(n, no) {
+//   var i;
+//   var x = document.getElementsByClassName(slideId[no]);
+//   if (n > x.length) {
+//     slideIndex[no] = 1
+//   }
+//
+//   if (n < 1) {
+//     slideIndex[no] = x.length
+//   }
+//
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//     x[i].style.transform = "translate3d(0rem, -50%, 0rem)";
+//   }
+//
+//   x[slideIndex[no]].style.display = "block";
+//   x[slideIndex[no]].style.transform = "translate3d(0rem, -50%, 0rem)";
+//
+//   x[slideIndex[no]-1].style.display = "block"
+//   x[slideIndex[no]-1].style.transform = "translate3d(-36rem, -50%, 0rem)";
+//
+//   x[slideIndex[no]+1].style.display = "block"
+//   x[slideIndex[no]+1].style.transform = "translate3d(36rem, -50%, 0rem)";
+// }

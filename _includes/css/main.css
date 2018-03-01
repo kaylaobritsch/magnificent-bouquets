@@ -430,46 +430,21 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-.prev,
-.next {
-  background-color: rgba(71, 69, 70, .75);
-  cursor: pointer;
-  color: #fff;
-  font-weight: bold;
-  transition: 0.6s ease;
-  user-select: none;
-  -webkit-user-select: none;
+.photo-grid {
+  /* Prevent vertical gaps */
+  line-height: 0;
+
+  -webkit-column-count: 1;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    1;
+  -moz-column-gap:      0px;
+  column-count:         1;
+  column-gap:           0px;
 }
 
-.gallerySlide4 {
-  display: none;
-  max-width: 50em;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-
-  -webkit-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
-}
-
-.carousel-inner {
-  border: solid 5px #474546;
-  height: 47rem;
-  width: 35rem;
-  overflow: hidden;
-}
-
-.modal-wrapper {
-  height: 49rem;
-  width: 35rem;
-}
-
-.prev:hover,
-.prev:focus,
-.next:hover,
-.next:focus {
-  color: #bb91bc;
+.photo-grid img {
+  width: 100% !important;
+  height: auto !important;
 }
 
 .services-section button,
@@ -501,6 +476,13 @@ textarea::placeholder {
   .card {
     width: 31.5%;
   }
+
+  .photo-grid {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+ }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -563,9 +545,17 @@ textarea::placeholder {
   .tabcontent-img {
     animation: slideIn 400ms linear;
   }
+
+  .photo-grid {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+ }
+
 }
 
 @keyframes fading {
+
   0% {
     opacity: 0;
   }
@@ -573,9 +563,11 @@ textarea::placeholder {
   100% {
     opacity: 1;
   }
+
 }
 
 @keyframes slideIn {
+
   0% {
     margin-top: 2rem;
   }
@@ -583,4 +575,5 @@ textarea::placeholder {
   100% {
     margin-top: 0;
   }
+
 }
