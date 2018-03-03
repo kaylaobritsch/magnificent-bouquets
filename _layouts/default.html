@@ -32,9 +32,9 @@
   <meta name="twitter:description" content="{{page.meta}}">
   <meta name="twitter:image" content="{{site.baseurl}}/images/logo-og.jpg">
 </head>
-<body>
+<body class="scrolling" id="body">
   <div itemref="data-founder" itemscope itemtype="http://schema.org/Organization">
-    <ul class="nav skip-links">
+    <ul class="skip-links">
       <li><a itemprop="url" href="{{site.baseurl}}{% if page.og-url %}/{{page.og-url}}{% endif %}/#main">Jump to Main Content</a></li>
       <li><a itemprop="url" href="{{site.baseurl}}{% if page.og-url %}/{{page.og-url}}{% endif %}/#nav">Jump to Navigation</a></li>
       {% if page.skip-link-1 %}
@@ -62,15 +62,15 @@
           </div>
           <input class="menu-btn" type="checkbox" id="menu-btn" />
           <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-          <ul class="nav-list menu menu-1 push-0 unit xs-1 l-2-5 gutter-0">
+          <ul class="nav nav-list menu menu-1 push-0 unit xs-1 l-2-5 gutter-0">
             <li class="milli gutter-1-2"><a href="{{site.baseurl}}/about/" {% if page.url == '/about/' %} class="current" {% endif %}>About</a></li>
             <li class="milli gutter-1-2"><a href="{{site.baseurl}}/gallery/" {% if page.url == '/gallery/' %} class="current" {% endif %}>Gallery</a></li>
             <li class="milli gutter-1-2"><a href="{{site.baseurl}}/services/" {% if page.url == '/services/' %} class="current" {% endif %}>Services</a></li>
           </ul>
-          <ul class="nav-list menu menu-2 push-0 unit xs-1 l-2-5">
+          <ul class="nav nav-list menu menu-2 push-0 unit xs-1 l-2-5">
             <li class="milli gutter-1-2" ><a itemprop="url" href="https://magnificentbouquets.tumblr.com/">Blog</a></li>
             <li class="milli gutter-1-2"><a href="{{site.baseurl}}/contact/" {% if page.url == '/contact/' %} class="current" {% endif %}>Contact</a></li>
-            <li class="milli gutter-1-2"><a itemprop="url" href="{{site.baseurl}}/#testimonials" {% if page.url == '/#testimonials/' %} class="current" {% endif %}>Testimonials</a></li>
+            <li class="milli gutter-1-2"><a itemprop="url" href="{{site.baseurl}}/#testimonials" {% if page.url == '/#testimonials/' %} class="current" {% endif %}>Testimonial</a></li>
           </ul>
         </div>
       </header>
@@ -97,10 +97,13 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/1.4.0/jquery.localScroll.min.js"></script> -->
   <script src="{{site.baseurl}}/js/form-validate.js"></script>
   <script src="{{site.baseurl}}/js/hero-banner.js"></script>
-  <script src="{{site.baseurl}}/js/gallery-banner.js"></script>
+  <script src="{{site.baseurl}}/js/modal.js"></script>
   <script src="{{site.baseurl}}/js/tabs.js"></script>
+  <script src="{{site.baseurl}}/js/main.js"></script>
 
 </body>
 </html>
