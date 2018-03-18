@@ -9,20 +9,20 @@ skip-link-1: designs
 skip-link-title-1: Jump to Signature Designs
 ---
 
-{% include banner.html image="placeholder-3by2.svg" alt="gallery banner" title="Gallery" txt="Here are some of our signature designs" btn-link="contact/" btn-txt="Contact Us" %}
+{% include banner.html image="banner-gallery.jpg" alt="Gallery banner" title="Gallery" txt="Here are some of our signature designs" btn-link="contact/" btn-txt="Contact Us" %}
 
 <section itemref itemscope itemtype="http://schema.org/CreativeWork" class="gallery-section" id="designs">
   <h3 itemprop="name" class="text-center mega heading pad-t-1-4 pad-b-1-4 push-0">Bespoke Designs</h3>
   <div class="pad-t pad-b-2">
-    {% include gallery-section.html heading="Seasonal Bouquets & Fruit Baskets" image-1="seasonal/seasonal-hp-3.jpg" alt-1="" image-2="seasonal/seasonal-hp-2.jpg" alt-2="" image-3="seasonal/seasonal-hp-1.jpg" alt-3="" txt="Whether it’s a birthday, a christening, a thank you, an apology (!), a new baby, an “I love you” or anything else, we carry a range of seasonal blooms to cater for all those <i>need to send flowers</i> moments." btn-txt="View All" mod-btn="basket-btn" %}
+    {% include gallery-section.html heading="Seasonal Bouquets & Fruit Baskets" image-1="seasonal/seasonal-hp-3.jpg" alt-1="Seasonal bouquet" image-2="seasonal/seasonal-hp-2.jpg" alt-2="Red seasonal bouquet" image-3="seasonal/seasonal-hp-1.jpg" alt-3="Seasonal bouquet" txt="Whether it’s a birthday, a christening, a thank you, an apology (!), a new baby, an “I love you” or anything else, we carry a range of seasonal blooms to cater for all those <i>need to send flowers</i> moments." btn-txt="View All" mod-btn="basket-btn" %}
 
-    {% include gallery-section.html heading="Weddings" image-1="weddings/weddings-hp-3.jpg" alt-1="" image-2="weddings/weddings-hp-2.jpg" alt-2="" image-3="weddings/weddings-hp-1.jpg" alt-3="" txt="Your wedding flowers should be a truly personal statement about you and how you feel on this most special of days. Initially, give us an idea of the style of your dress, your themes and your venue. Then together, we’ll design wedding flowers exclusively for you, tailored to fit your personality, location and dreams." btn-txt="View All" mod-btn="wedding-btn" %}
+    {% include gallery-section.html heading="Weddings" image-1="weddings/weddings-hp-3.jpg" alt-1="Wedding bouquet" image-2="weddings/weddings-hp-2.jpg" alt-2="Bride with her bouquet" image-3="weddings/weddings-hp-1.jpg" alt-3="Kristian and Natasha bouquet" txt="Your wedding flowers should be a truly personal statement about you and how you feel on this most special of days. Initially, give us an idea of the style of your dress, your themes and your venue. Then together, we’ll design wedding flowers exclusively for you, tailored to fit your personality, location and dreams." btn-txt="View All" mod-btn="wedding-btn" %}
 
-    {% include gallery-section.html heading="Stately houses, Castles & Cathedrals" image-1="castles/castles-hp-3.jpg" alt-1="Michael & Danielle holding a baby after their wedding" image-2="castles/castles-hp-2.jpg" alt-2="Michael & Danielle's table bouquet" image-3="castles/castles-hp-1.jpg" alt-3="Michael & Danielle's table arrangement" txt="Flowers at an event should have a sense of balance and rhythm. A natural flow and harmony connecting all the arrangements, making you want to look and keep on looking. And every bride should savour that spectacular moment, with a grand entrance carrying her Magnificent Bouquet. It’s about creating a series of WOW moments to surprise and delight guests as they move through your venue – whether it’s a castle, church, hotel, marquee, stately house or favourite restaurant." btn-link="" btn-txt="View All" mod-btn="stately-btn" %}
+    {% include gallery-section.html heading="Stately houses, Castles & Cathedrals" image-1="castles/castles-hp-3.jpg" alt-1="Michael & Danielle holding their baby after their wedding" image-2="castles/castles-hp-2.jpg" alt-2="Michael & Danielle's table bouquet" image-3="castles/castles-hp-1.jpg" alt-3="Michael & Danielle's table arrangement" txt="Flowers at an event should have a sense of balance and rhythm. A natural flow and harmony connecting all the arrangements, making you want to look and keep on looking. And every bride should savour that spectacular moment, with a grand entrance carrying her Magnificent Bouquet. It’s about creating a series of WOW moments to surprise and delight guests as they move through your venue – whether it’s a castle, church, hotel, marquee, stately house or favourite restaurant." btn-link="" btn-txt="View All" mod-btn="stately-btn" %}
 
     {% include gallery-section.html heading="Funeral and Natural Burial Flowers" image-1="funeral/funeral-hp-1.jpg" alt-1="Orange roses in a heart funeral bouquet" image-2="funeral/funeral-hp-2.jpg" alt-2="White rose funeral bouquet" image-3="funeral/funeral-hp-3.jpg" alt-3="Pink daiseys and roses funeral wreath" txt="At Magnificent Bouquets we believe in sympathy with empathy. Funerals are your last chance to say goodbye. Having lost three dear ones within six months of each other, we can truly appreciate how awful it is to experience that loss. And every sympathy tribute that is created has those feelings deeply embedded in, allowing us to produce arrangements that really say what you feel in a beautiful way." btn-link="" btn-txt="View All" mod-btn="funeral-btn" %}
 
-    {% include gallery-section.html heading="Contract Flowers & Special Events" image-1="contract/contract-hp-3.jpg" alt-1="" image-2="contract/contract-hp-2.jpg" alt-2="" image-3="contract/contract-hp-1.jpg" alt-3="" txt="For businesses, restaurants, hotels and homes we provide a regular contract service of fresh floral designs and arrangements, styled to add interest and a focal point for your customers." btn-link="" btn-txt="View All" mod-btn="contract-btn" %}
+    {% include gallery-section.html heading="Contract Flowers & Special Events" image-1="contract/contract-hp-3.jpg" alt-1="Orchids in a bowl" image-2="contract/contract-hp-2.jpg" alt-2="Orchids in a bowl" image-3="contract/contract-hp-1.jpg" alt-3="Contract flowers in woven baskets" txt="For businesses, restaurants, hotels and homes we provide a regular contract service of fresh floral designs and arrangements, styled to add interest and a focal point for your customers." btn-link="" btn-txt="View All" mod-btn="contract-btn" %}
   </div>
 
   <div id="modal-basket" class="modal pad-t">
@@ -30,20 +30,31 @@ skip-link-title-1: Jump to Signature Designs
       <h4 class="push-1-2 exa" id="top-basket">Seasonal Bouquets & Fruit Baskets</h4>
       <div class="photo-grid relative">
         <span class="close nina absolute pin-top-right" onclick="closeModal()">x</span>
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-1.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-2.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-4.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-5.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-6.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-7.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-8.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-9.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-11.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-12.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-13.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-14.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-15.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-16.jpg">
+        <img itemprop="image" alt="Pink daisys seasonal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-1.jpg">
+        <img itemprop="image" alt="Pink roses seasonal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-2.jpg">
+        <img itemprop="image" alt="Yellow roses with white daisys seasonal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-25.jpg">
+        <img itemprop="image" alt="Orange roses seasonal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-4.jpg">
+        <img itemprop="image" alt="Yellow seasonal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-21.jpg">
+        <img itemprop="image" alt="Seasonal bouquet in a box" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-26.jpg">
+        <img itemprop="image" alt="Seasonal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-24.jpg">
+        <img itemprop="image" alt="Seaonsal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-5.jpg">
+        <img itemprop="image" alt="Pink seaonsal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-18.jpg">
+        <img itemprop="image" alt="Bright red seaonsal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-6.jpg">
+        <img itemprop="image" alt="Seaonsal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-7.jpg">
+        <img itemprop="image" alt="Seaonsal bouquet with orange bow" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-8.jpg">
+        <img itemprop="image" alt="Seaonsal bouquet with pink roses and red lilys" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-9.jpg">
+        <img itemprop="image" alt="Pink seaonsal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-11.jpg">
+        <img itemprop="image" alt="Pink and white seaonsal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-12.jpg">
+        <img itemprop="image" alt="Seaonsal bouquet with white tulips" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-13.jpg">
+        <img itemprop="image" alt="Seaonsal bouquets at the shop" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-14.jpg">
+        <img itemprop="image" alt="Seaonsal bouquet with lilies" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-15.jpg">
+        <img itemprop="image" alt="Seaonsal bouquet with white roses" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-16.jpg">
+        <img itemprop="image" alt="Seaonsal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-17.jpg">
+        <img itemprop="image" alt="Spring seaonsal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-19.jpg">
+        <img itemprop="image" alt="Spring seaonsal bouquet with pink tulips" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-20.jpg">
+        <img itemprop="image" alt="Seaonsal bouquet" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-22.jpg">
+        <img itemprop="image" alt="Seaonsal bouquet with orchids" class="island-1-8" src="{{site.baseurl}}/images/seasonal/seasonal-23.jpg">
+        <img itemprop="image" alt="Fruit basket" class="island-1-8" src="{{site.baseurl}}/images/seasonal/fruitbasket-1.jpg">
       </div>
       <div class="pad-t-2 pad-b-2 text-center">
         <a class="btn btn-ghost" href="#top-basket">To Top</a>
@@ -56,24 +67,36 @@ skip-link-title-1: Jump to Signature Designs
       <h4 class="push-1-2 exa" id="top-wedding">Weddings</h4>
       <div class="photo-grid relative">
         <span class="close nina absolute pin-top-right" onclick="closeModal()">x</span>
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-1.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-2.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-3.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-4.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-5.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-6.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-7.jpg">
+        <img itemprop="image" alt="Kristian and Natasha bouquet" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-1.jpg">
+        <img itemprop="image" alt="Ian & Laura pink bouquet" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-2.jpg">
+        <img itemprop="image" alt="Ian & Laura pink wedding bouquet" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-3.jpg">
+        <img itemprop="image" alt="Ian & Laura groomsmen boutonniere" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-4.jpg">
+        <img itemprop="image" alt="Bridesmaids with bride" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-5.jpg">
         <div class="gallery-quote island">
-          <p class="block milli island push-0">“Magnificent Bouquets made me the happiest bride ever!”</p>
+          <p class="block milli island push-0"><span class="pad-b-1-2 relative"><span class="absolute pin-top-left left-mark">“</span>We were blown away by the beauty of our wedding flowers that you created for us. I loved my bouquet, it was so unique and ethereal. Thank you.</span><br>—Lisa & Stephen</p>
         </div>
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-8.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-9.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-10.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-11.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-12.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-13.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-14.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-15.jpg">
+        <img itemprop="image" alt="Happy girl holding white flowers" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-6.jpg">
+        <img itemprop="image" alt="Ian & Eleanor cheers with wine" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-16.jpg">
+        <img itemprop="image"  alt="Ian & Eleanor groomsmen boutonniere" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-17.jpg">
+        <img itemprop="image" alt="Ian & Eleanor cheers flowers" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-18.jpg">
+        <img itemprop="image" alt="Ian & Eleanor bridesmaids" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-19.jpg">
+        <img itemprop="image" alt="Ian & Eleanor" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-20.jpg">
+        <img itemprop="image" alt="Ian & Eleanor head table arrangment" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-21.jpg">
+        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-22.jpg">
+        <img itemprop="image" alt="Alex & Tomi walking down the aisle" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-7.jpg">
+        <img itemprop="image" alt="Alex & Tomi sitting at the head table" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-23.jpg">
+        <img itemprop="image" alt="Alex & Tomi's bride bouquet" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-24.jpg">
+        <img itemprop="image" alt="Stephen & Lisa table arrangment" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-8.jpg">
+        <img itemprop="image" alt="Martin & Avril bouquets" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-9.jpg">
+        <img itemprop="image" alt="Martin & Avril bouquets with high heels" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-10.jpg">
+        <img itemprop="image" alt="Stephen & Lisa bride with her bouquet" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-11.jpg">
+        <img itemprop="image" alt="Emotional moment with bride and father" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-12.jpg">
+        <img itemprop="image" alt="Bridesmaid corsage" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-13.jpg">
+        <img itemprop="image" alt="Purple circle flower bouquet" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-14.jpg">
+        <div class="gallery-quote island">
+          <p class="block milli island push-0"><span class="pad-b-1-2 relative"><span class="absolute pin-top-left left-mark">“</span>Thank you so much for our amazing flowers, the decoration you did for Mum's Tree, you made everything even more special,I can't thank you enough. Our wedding day was perfect.  We couldn't of asked for any more, the colours we're fantastic & complemented the day so well. I would recommend you to anyone who wants their flowers to be extra special, they were perfect.”</span><br>—Mr & Mrs Gough xxx</p>
+        </div>
+        <img itemprop="image" alt="Purple bridesmaid bouquet" class="island-1-8" src="{{site.baseurl}}/images/weddings/weddings-15.jpg">
       </div>
       <div class="pad-t-2 pad-b-2 text-center">
         <a class="btn btn-ghost" href="#top-wedding">To Top</a>
@@ -87,20 +110,23 @@ skip-link-title-1: Jump to Signature Designs
       <div class="photo-grid relative">
         <span class="close nina absolute pin-top-right" onclick="closeModal()">x</span>
         <img itemprop="image" alt="Wedding decoration" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-1.jpg">
-        <img itemprop="image" alt="Bride of the wedding" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-2.jpg">
-        <img itemprop="image" alt="Groomsman flowers" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-3.jpg">
-        <img itemprop="image" alt="Grooms flower" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-4.jpg">
-        <img itemprop="image" alt="Walking the aisle of a castle" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-5.jpg">
-        <img itemprop="image" alt="Bride holding lovely red bouquet" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-6.jpg">
+        <img itemprop="image" alt="Danielle, the bride of the wedding" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-2.jpg">
+        <div class="gallery-quote island">
+          <p class="block milli island push-0"><span class="pad-b-1-2 relative"><span class="absolute pin-top-left left-mark">“</span>Thank you so much for transforming my wedding venue, not to mention taking all the stress away. The flowers were truly amazing and exactly how I had imagined them. My bouquets was a show stopper, attracting many admiring glances. The uniqueness of the flowers was greatly commented on. Thank you for making such a wonderful day beautiful, (a special mention of your dressing of a particularly ugly desk!)”</span><br>—Danielle & Michael, Belvoir Castle</p>
+        </div>
+        <img itemprop="image" alt="Groomsman boutonniere" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-3.jpg">
+        <img itemprop="image" alt="Groom receiving boutonniere" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-4.jpg">
+        <img itemprop="image" alt="Walking the aisle of Belvoir Castle" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-5.jpg">
+        <img itemprop="image" alt="Danielle, the bride, holding lovely red bouquet" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-6.jpg">
         <img itemprop="image" alt="Emotional parents" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-7.jpg">
         <img itemprop="image" alt="Wedding decoration" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-8.jpg">
         <img itemprop="image" alt="Table bouquet" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-9.jpg">
         <img itemprop="image" alt="Wedding head table" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-10.jpg">
-        <img itemprop="image" alt="Bride and groom holding a baby" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-11.jpg">
+        <img itemprop="image" alt="Bride and groom holding their baby" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-11.jpg">
         <img itemprop="image" alt="Family celebrating" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-12.jpg">
-        <img itemprop="image" alt="Flowers outside the castle" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-13.jpg">
-        <img itemprop="image" alt="Castle aisle" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-14.jpg">
-        <img itemprop="image" alt="Castle aisle flowers" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-15.jpg">
+        <img itemprop="image" alt="Flowers outside Belvoir Castle" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-13.jpg">
+        <img itemprop="image" alt="Belvoir Castle aisle" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-14.jpg">
+        <img itemprop="image" alt="Belvoir Castle aisle flowers" class="island-1-8" src="{{site.baseurl}}/images/castles/castles-15.jpg">
       </div>
       <div class="pad-t-2 pad-b-2 text-center">
         <a class="btn btn-ghost" href="#top-stately">To Top</a>
@@ -113,26 +139,28 @@ skip-link-title-1: Jump to Signature Designs
       <h4 class="push-1-2 exa" id="top-funeral">Funeral Flowers</h4>
       <div class="photo-grid relative pad-b">
         <span class="close nina absolute pin-top-right" onclick="closeModal()">x</span>
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-1.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-2.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-3.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-4.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-5.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-6.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-7.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-10.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-11.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-12.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-13.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-14.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-15.jpg">
+        <img itemprop="image" alt="Yellow funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-16.jpg">
+        <img itemprop="image" alt="Roses in the shape of a heart funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-2.jpg">
+        <img itemprop="image" alt="Bouquet shaped in a bear on a casket" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-3.jpg">
+        <img itemprop="image" alt="Funeral wreath" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-1.jpg">
+        <img itemprop="image" alt="Red funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-17.jpg">
+        <img itemprop="image" alt="Red roses with blue ribbon funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-4.jpg">
+        <img itemprop="image" alt="Red funeral bouquet in a basket" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-5.jpg">
+        <img itemprop="image" alt="Red roses and ivy funeral bouquet in the shape of a heart" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-6.jpg">
+        <img itemprop="image" alt="Orchids in a heart shaped funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-7.jpg">
+        <img itemprop="image" alt="White funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-10.jpg">
+        <img itemprop="image" alt="White and purple lilys funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-11.jpg">
+        <img itemprop="image" alt="Blue funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-13.jpg">
+        <img itemprop="image" alt="Purple orchids funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-12.jpg">
+        <img itemprop="image" alt="Purple orchids funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-14.jpg">
+        <img itemprop="image" alt="Funeral bouquet with pine cones" class="island-1-8" src="{{site.baseurl}}/images/funeral/funeral-15.jpg">
       </div>
       <h4 class="push-1-2 exa" id="top-funeral">Natural Burial Flowers</h4>
       <div class="photo-grid text-center relative">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/natural-funeral-1.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/natural-funeral-2.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/natural-funeral-3.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/funeral/natural-funeral-4.jpg">
+        <img itemprop="image" alt="Pink and white roses funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/natural-funeral-1.jpg">
+        <img itemprop="image" alt="Pink and white roses funeral bouquet" class="island-1-8" src="{{site.baseurl}}/images/funeral/natural-funeral-2.jpg">
+        <img itemprop="image" alt="Natural funeral bouquet in a cross" class="island-1-8" src="{{site.baseurl}}/images/funeral/natural-funeral-3.jpg">
+        <img itemprop="image" alt="Natural funeral bouquet in a cross" class="island-1-8" src="{{site.baseurl}}/images/funeral/natural-funeral-4.jpg">
       </div>
       <div class="pad-t-2 pad-b-2 text-center">
         <a class="btn btn-ghost" href="#top-funeral">To Top</a>
@@ -145,21 +173,20 @@ skip-link-title-1: Jump to Signature Designs
       <h4 class="push-1-2 exa" id="top-contract">Contract Flowers & Special Events</h4>
       <div class="photo-grid relative">
         <span class="close nina absolute pin-top-right" onclick="closeModal()">x</span>
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-1.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-2.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-3.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-4.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-5.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-6.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-7.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-8.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-9.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-10.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-11.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-12.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-13.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-14.jpg">
-        <img itemprop="image" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-15.jpg">
+        <img itemprop="image" alt="Pink contract bouquet" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-1.jpg">
+        <img itemprop="image" alt="Little girl in front of yellow contract bouquet" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-2.jpg">
+        <img itemprop="image" alt="Contract bouquet in wooden barrel" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-3.jpg">
+        <img itemprop="image" alt="Contract bouquet with tropical leaves" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-4.jpg">
+        <img itemprop="image" alt="Contract bouquet in rain boots with a teddy bear" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-5.jpg">
+        <img itemprop="image" alt="Contract bouquets in baskets" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-6.jpg">
+        <img itemprop="image" alt="Tropical contract bouquet" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-7.jpg">
+        <img itemprop="image" alt="Tropical contract bouquet" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-8.jpg">
+        <img itemprop="image" alt="Contract bouquet for a restaurant" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-9.jpg">
+        <img itemprop="image" alt="Contract bouquet with pink orchids in a bowl" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-11.jpg">
+        <img itemprop="image" alt="Contract bouquet with orchids in a vase" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-12.jpg">
+        <img itemprop="image" alt="Contract bouquet with orchids in a vase" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-13.jpg">
+        <img itemprop="image" alt="Contract bouquet" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-14.jpg">
+        <img itemprop="image" alt="Contract bouquet with tall white flowers in vases" class="island-1-8" src="{{site.baseurl}}/images/contract/contract-15.jpg">
       </div>
       <div class="pad-t-2 pad-b-2 text-center">
         <a class="btn btn-ghost" href="#top-contract">To Top</a>
