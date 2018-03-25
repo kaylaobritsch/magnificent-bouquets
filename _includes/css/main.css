@@ -14,11 +14,6 @@ a {
   text-decoration: none;
 }
 
-svg {
-  height: 100%;
-  width: 100%;
-}
-
 .wrapper {
   max-width: 60em;
 }
