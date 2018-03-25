@@ -296,13 +296,18 @@ footer {
 
 .welcome-section,
 .test-section,
-.services-section {
+.services-section,
+.delivery-section {
   color: #fff;
   background-color: #555154;
 }
 
 .service-section {
   background-color: #e0dfe4;
+}
+
+div.i4ewOd-pzNkMb-haAclf {
+  background-color: rgb(180,147,185) !important;
 }
 
 .card h3 {
