@@ -1,57 +1,59 @@
-var modalBasket = document.getElementById('modal-basket');
-var btnBasket = document.getElementById("basket-btn");
-var modalWedding = document.getElementById('modal-wedding');
-var btnWedding = document.getElementById("wedding-btn");
-var modalStately = document.getElementById('modal-stately');
-var btnStately = document.getElementById("stately-btn");
-var modalFuneral = document.getElementById('modal-funeral');
-var btnFuneral = document.getElementById("funeral-btn");
-var modalContract = document.getElementById('modal-contract');
-var btnContract = document.getElementById("contract-btn");
+window.onload = function() {
+  var modalBasket = document.getElementById('modal-basket');
+  var btnBasket = document.getElementById("basket-btn");
+  var modalWedding = document.getElementById('modal-wedding');
+  var btnWedding = document.getElementById("wedding-btn");
+  var modalStately = document.getElementById('modal-stately');
+  var btnStately = document.getElementById("stately-btn");
+  var modalFuneral = document.getElementById('modal-funeral');
+  var btnFuneral = document.getElementById("funeral-btn");
+  var modalContract = document.getElementById('modal-contract');
+  var btnContract = document.getElementById("contract-btn");
 
-btnBasket.onclick = function() {
-  $(window.document).find("body").addClass("modal-open");
-  $("body").removeClass("scrolling");
-  $("#modal-basket").addClass("scrolling");
-  modalBasket.style.display = "block";
-}
+  btnBasket.onclick = function() {
+    $(window.document).find("body").addClass("modal-open");
+    $("body").removeClass("scrolling");
+    $("#modal-basket").addClass("scrolling");
+    modalBasket.style.display = "block";
+  }
 
-btnWedding.onclick = function() {
-  $(window.document).find("body").addClass("modal-open");
-  $("body").removeClass("scrolling");
-  $("#modal-wedding").addClass("scrolling");
-  modalWedding.style.display = "block";
-}
+  btnWedding.onclick = function() {
+    $(window.document).find("body").addClass("modal-open");
+    $("body").removeClass("scrolling");
+    $("#modal-wedding").addClass("scrolling");
+    modalWedding.style.display = "block";
+  }
 
-btnStately.onclick = function() {
-  $(window.document).find("body").addClass("modal-open");
-  $("body").removeClass("scrolling");
-  $("#modal-stately").addClass("scrolling");
-  modalStately.style.display = "block";
-}
+  btnStately.onclick = function() {
+    $(window.document).find("body").addClass("modal-open");
+    $("body").removeClass("scrolling");
+    $("#modal-stately").addClass("scrolling");
+    modalStately.style.display = "block";
+  }
 
-btnFuneral.onclick = function() {
-  $(window.document).find("body").addClass("modal-open");
-  $("body").removeClass("scrolling");
-  $("#modal-funeral").addClass("scrolling");
-  modalFuneral.style.display = "block";
-}
+  btnFuneral.onclick = function() {
+    $(window.document).find("body").addClass("modal-open");
+    $("body").removeClass("scrolling");
+    $("#modal-funeral").addClass("scrolling");
+    modalFuneral.style.display = "block";
+  }
 
-btnContract.onclick = function() {
-  $(window.document).find("body").addClass("modal-open");
-  $("body").removeClass("scrolling");
-  $("#modal-contract").addClass("scrolling");
-  modalContract.style.display = "block";
-}
+  btnContract.onclick = function() {
+    $(window.document).find("body").addClass("modal-open");
+    $("body").removeClass("scrolling");
+    $("#modal-contract").addClass("scrolling");
+    modalContract.style.display = "block";
+  }
 
-function closeModal() {
-  document.getElementById('modal-basket').style.display = "none";
-  document.getElementById('modal-wedding').style.display = "none";
-  document.getElementById('modal-stately').style.display = "none";
-  document.getElementById('modal-funeral').style.display = "none";
-  document.getElementById('modal-contract').style.display = "none";
-  $(window.document).find("body").removeClass("modal-open");
-  $("body").addClass("scrolling");
+  function closeModal() {
+    document.getElementById('modal-basket').style.display = "none";
+    document.getElementById('modal-wedding').style.display = "none";
+    document.getElementById('modal-stately').style.display = "none";
+    document.getElementById('modal-funeral').style.display = "none";
+    document.getElementById('modal-contract').style.display = "none";
+    $(window.document).find("body").removeClass("modal-open");
+    $("body").addClass("scrolling");
+  }
 }
 
 // var slideIndex = [1,1,1,1,1];
