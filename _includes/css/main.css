@@ -255,6 +255,8 @@ button:focus,
 
 .animate-fading {
   animation: fading 1.5s linear;
+  -webkit-animation: fading 1.5s linear;
+  animation: fading 1.5s linear;
 }
 
 footer {
@@ -611,6 +613,18 @@ textarea::placeholder {
     -webkit-column-count: 3;
     column-count:         3;
  }
+
+}
+
+@-webkit-keyframes fading {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 
 }
 
