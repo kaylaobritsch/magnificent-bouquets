@@ -202,6 +202,8 @@ h2 {
   color: #fff;
   background-color: #bb91bc;
   display: block;
+
+  margin-bottom: .5rem;
 }
 
 .banner-text .btn,
@@ -611,6 +613,8 @@ textarea::placeholder {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    margin-bottom: 0;
   }
 
   #seasonal,
