@@ -503,10 +503,14 @@ textarea::placeholder {
 
 .services-section button,
 .tab {
-  background-color: transparent;
+  background-color: #e0dfe4;
   border: none;
   color: #555154;
   transition: all .25s linear;
+}
+
+.tab {
+  background-color: #e0dfe4;
 }
 
 .services-section button:hover,
