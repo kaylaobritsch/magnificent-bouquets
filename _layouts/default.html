@@ -44,6 +44,9 @@
       {% if page.skip-link-2 %}
         <li><a itemprop="url" href="{{site.baseurl}}/{{page.og-url}}/#{{page.skip-link-2}}">{{page.skip-link-title-2}}</a></li>
       {% endif %}
+      {% if page.skip-link-3 %}
+        <li><a itemprop="url" href="{{site.baseurl}}/{{page.og-url}}/#{{page.skip-link-3}}">{{page.skip-link-title-3}}</a></li>
+      {% endif %}
     </ul>
 
     <nav class="push-0" id="nav" role="navigation">
@@ -67,8 +70,8 @@
           <input class="menu-btn" type="checkbox" id="menu-btn" />
           <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
           <ul class="nav nav-list menu menu-1 push-0 unit xs-1 l-2-5 gutter-0">
-            <li class="milli gutter-1-2"><a href="{{site.baseurl}}/about/" {% if page.url == '/about/' %} class="current" {% endif %}>About</a></li>
             <li class="milli gutter-1-2"><a href="{{site.baseurl}}/gallery/" {% if page.url == '/gallery/' %} class="current" {% endif %}>Gallery</a></li>
+            <li class="milli gutter-1-2"><a href="{{site.baseurl}}/about/" {% if page.url == '/about/' %} class="current" {% endif %}>About</a></li>
             <li class="milli gutter-1-2"><a href="{{site.baseurl}}/services/" {% if page.url == '/services/' %} class="current" {% endif %}>Services</a></li>
           </ul>
           <ul class="nav nav-list menu menu-2 push-0 unit xs-1 l-2-5">
