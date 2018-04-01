@@ -39,6 +39,8 @@ a {
 
 .top-nav a {
   color: #555154;
+
+  -ms-transition-duration: 0s;
   transition: all .25s linear;
 }
 
@@ -258,6 +260,7 @@ button:focus,
 .animate-fading {
   animation: fading 1.5s linear;
   -webkit-animation: fading 1.5s linear;
+  -ms-animation: fading 1.5s; /* Internet Explorer */
   animation: fading 1.5s linear;
 }
 
@@ -662,6 +665,17 @@ textarea::placeholder {
     opacity: 1;
   }
 
+}
+
+@-ms-keyframes fading {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {
