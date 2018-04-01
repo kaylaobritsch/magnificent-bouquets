@@ -532,8 +532,8 @@ textarea::placeholder {
 }
 
 .btn-top-wrapper {
-  bottom: 25px;
-  right: 50px;
+  bottom: -2rem;
+  right: 1rem;
   position: fixed;
 
   z-index: 1000;
@@ -541,7 +541,6 @@ textarea::placeholder {
 
 .btn-top {
   background-color: rgba(0, 0, 0, .50);
-  border-radius: 90px;
 }
 
 @media only screen and (min-width: 38em) {
