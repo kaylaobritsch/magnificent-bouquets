@@ -258,10 +258,9 @@ button:focus,
 }
 
 .animate-fading {
-  animation: fading 1.5s linear;
-  -webkit-animation: fading 1.5s linear;
+  -webkit-animation: fading 1.5s;
   -ms-animation: fading 1.5s; /* Internet Explorer */
-  animation: fading 1.5s linear;
+  animation: fading 1.5s;
 }
 
 footer {
@@ -669,11 +668,11 @@ textarea::placeholder {
 
 @-ms-keyframes fading {
 
-  from {
+  0% {
     opacity: 0;
   }
 
-  to {
+  100% {
     opacity: 1;
   }
 }
