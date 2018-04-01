@@ -503,7 +503,7 @@ textarea::placeholder {
 
 .services-section button,
 .tab {
-  background-color: #e0dfe4;
+  background-color: transparent;
   border: none;
   color: #555154;
   transition: all .25s linear;
