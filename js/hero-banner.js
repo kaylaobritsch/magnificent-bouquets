@@ -31,7 +31,6 @@ function showDivs(n) {
 
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
-    x[slideIndex-1].className += " animate-fading";
   }
 
   for (i = 0; i < dots.length; i++) {

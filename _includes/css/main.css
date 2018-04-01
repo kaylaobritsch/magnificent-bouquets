@@ -40,7 +40,7 @@ a {
 .top-nav a {
   color: #555154;
 
-  -ms-transition-duration: 0s;
+  -ms-transition: all 0s linear;
   transition: all .25s linear;
 }
 
